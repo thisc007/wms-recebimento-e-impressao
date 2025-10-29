@@ -1,0 +1,10 @@
+{
+  "api_base": "http://localhost/printing-service/api",
+  "log_level": "INFO",
+  "printer": {
+    "type": "windows_printer",
+    "share": "\\\\localhost\\MyPrinter"
+  },
+  "default_qty": 1,
+  "timeout": 30
+}
