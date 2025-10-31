@@ -1,11 +1,11 @@
 {
   "api_base": "http://localhost:8000/api",
-  "log_level": "INFO",
+  "log_level": "DEBUG",
   "printer": {
     "type": "windows_printer",
     "share": "\\\\localhost\\MyPrinter"
   },
   "default_qty": 1,
   "timeout": 30,
-  "debug_mode": false
+  "debug_mode": true
 }

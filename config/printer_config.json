@@ -1,0 +1,51 @@
+{
+  "default_printer": "network_1761853989",
+  "printers": {
+    "network_1761847843": {
+      "id": "network_1761847843",
+      "name": "Zebra ADM 135",
+      "type": "network",
+      "enabled": true,
+      "connection": {
+        "mode": "network",
+        "ip_address": "192.168.99.135",
+        "port": 9100,
+        "timeout": 5
+      },
+      "settings": {
+        "print_speed": "2",
+        "darkness": "8",
+        "print_width": "104mm",
+        "label_width": "90mm",
+        "label_height": "70mm",
+        "dpi": "203"
+      }
+    },
+    "network_1761853989": {
+      "id": "network_1761853989",
+      "name": "135 - Zebra",
+      "type": "network",
+      "enabled": true,
+      "connection": {
+        "mode": "network",
+        "ip_address": "192.168.99.135",
+        "port": 9100,
+        "timeout": 5
+      },
+      "settings": {
+        "print_speed": "2",
+        "darkness": "8",
+        "print_width": "104mm",
+        "label_width": "90mm",
+        "label_height": "70mm",
+        "dpi": "203"
+      }
+    }
+  },
+  "global_settings": {
+    "test_pattern": true,
+    "auto_calibrate": false,
+    "label_format": "zpl",
+    "encoding": "utf-8"
+  }
+}

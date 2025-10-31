@@ -1,0 +1,9 @@
+2025-10-29 15:46:24,327 - INFO - Iniciando aplicação GUI
+2025-10-29 15:51:28,697 - INFO - Iniciando aplicação GUI
+2025-10-29 16:02:42,810 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:03:34,918 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:16:44,902 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:16:55,722 - ERROR - Erro durante o login: requests.api.post() got multiple values for keyword argument 'json'
+2025-10-29 16:17:47,423 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:17:57,594 - ERROR - Erro durante o login: requests.api.post() got multiple values for keyword argument 'json'
+2025-10-29 16:18:33,736 - INFO - Iniciando aplicação GUI (versão simples)

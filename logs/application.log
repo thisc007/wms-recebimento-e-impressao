@@ -1,0 +1,1458 @@
+2025-10-29 15:48:43,381 - INFO - Iniciando aplicação GUI
+2025-10-29 15:55:11,981 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 15:56:03,237 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 15:57:09,045 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:20:23,162 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:21:29,279 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:21:52,636 - DEBUG - Starting new HTTP connection (1): localhost:80
+2025-10-29 16:21:54,166 - DEBUG - http://localhost:80 "POST /WMS-millenium/public/api/login HTTP/1.1" 500 None
+2025-10-29 16:21:54,168 - ERROR - Erro durante o login: Login failed: 500 - {
+    "message": "App\\Repositories\\AuthRepository::attemptLogin(): Argument #4 ($module) must be of type string, null given, called in C:\\xampp\\htdocs\\WMS-millenium\\app\\Http\\Controllers\\Api\\AuthController.php on line 78",
+    "exception": "TypeError",
+    "file": "C:\\xampp\\htdocs\\WMS-millenium\\app\\Repositories\\AuthRepository.php",
+    "line": 25,
+    "trace": [
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\app\\Http\\Controllers\\Api\\AuthController.php",
+            "line": 78,
+            "function": "attemptLogin",
+            "class": "App\\Repositories\\AuthRepository",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php",
+            "line": 54,
+            "function": "loginApi",
+            "class": "App\\Http\\Controllers\\Api\\AuthController",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php",
+            "line": 43,
+            "function": "callAction",
+            "class": "Illuminate\\Routing\\Controller",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+            "line": 265,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\ControllerDispatcher",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+            "line": 211,
+            "function": "runController",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 822,
+            "function": "run",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 180,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\app\\Http\\Middleware\\TrackUserActivity.php",
+            "line": 67,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "App\\Http\\Middleware\\TrackUserActivity",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php",
+            "line": 50,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 137,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 821,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 800,
+            "function": "runRouteWithinStack",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 764,
+            "function": "runRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 753,
+            "function": "dispatchToRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 200,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 180,
+            "function": "Illuminate\\Foundation\\Http\\{closure}",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+            "line": 21,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
+            "line": 31,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+            "line": 21,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
+            "line": 51,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php",
+            "line": 27,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\ValidatePostSize",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
+            "line": 109,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php",
+            "line": 61,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\HandleCors",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
+            "line": 58,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php",
+            "line": 22,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php",
+            "line": 26,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\ValidatePathEncoding",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 137,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 175,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 144,
+            "function": "sendRequestThroughRouter",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php",
+            "line": 1220,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\public\\index.php",
+            "line": 20,
+            "function": "handleRequest",
+            "class": "Illuminate\\Foundation\\Application",
+            "type": "->"
+        }
+    ]
+}
+2025-10-29 16:24:58,410 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:25:08,820 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 16:25:11,053 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 500 None
+2025-10-29 16:25:11,055 - ERROR - Erro durante o login: Login failed: 500 - {
+    "message": "App\\Repositories\\AuthRepository::attemptLogin(): Argument #4 ($module) must be of type string, null given, called in C:\\xampp\\htdocs\\WMS-millenium\\app\\Http\\Controllers\\Api\\AuthController.php on line 78",
+    "exception": "TypeError",
+    "file": "C:\\xampp\\htdocs\\WMS-millenium\\app\\Repositories\\AuthRepository.php",
+    "line": 25,
+    "trace": [
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\app\\Http\\Controllers\\Api\\AuthController.php",
+            "line": 78,
+            "function": "attemptLogin",
+            "class": "App\\Repositories\\AuthRepository",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php",
+            "line": 54,
+            "function": "loginApi",
+            "class": "App\\Http\\Controllers\\Api\\AuthController",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php",
+            "line": 43,
+            "function": "callAction",
+            "class": "Illuminate\\Routing\\Controller",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+            "line": 265,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\ControllerDispatcher",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+            "line": 211,
+            "function": "runController",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 822,
+            "function": "run",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 180,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\app\\Http\\Middleware\\TrackUserActivity.php",
+            "line": 67,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "App\\Http\\Middleware\\TrackUserActivity",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php",
+            "line": 50,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 137,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 821,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 800,
+            "function": "runRouteWithinStack",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 764,
+            "function": "runRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 753,
+            "function": "dispatchToRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 200,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 180,
+            "function": "Illuminate\\Foundation\\Http\\{closure}",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+            "line": 21,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
+            "line": 31,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+            "line": 21,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
+            "line": 51,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php",
+            "line": 27,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\ValidatePostSize",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
+            "line": 109,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php",
+            "line": 61,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\HandleCors",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
+            "line": 58,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php",
+            "line": 22,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php",
+            "line": 26,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\ValidatePathEncoding",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 137,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 175,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 144,
+            "function": "sendRequestThroughRouter",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php",
+            "line": 1220,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\public\\index.php",
+            "line": 20,
+            "function": "handleRequest",
+            "class": "Illuminate\\Foundation\\Application",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php",
+            "line": 23,
+            "function": "require_once"
+        }
+    ]
+}
+2025-10-29 16:25:32,562 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:25:45,811 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 16:25:48,043 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 500 None
+2025-10-29 16:25:48,045 - ERROR - Erro durante o login: Login failed: 500 - {
+    "message": "App\\Repositories\\AuthRepository::attemptLogin(): Argument #4 ($module) must be of type string, null given, called in C:\\xampp\\htdocs\\WMS-millenium\\app\\Http\\Controllers\\Api\\AuthController.php on line 78",
+    "exception": "TypeError",
+    "file": "C:\\xampp\\htdocs\\WMS-millenium\\app\\Repositories\\AuthRepository.php",
+    "line": 25,
+    "trace": [
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\app\\Http\\Controllers\\Api\\AuthController.php",
+            "line": 78,
+            "function": "attemptLogin",
+            "class": "App\\Repositories\\AuthRepository",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php",
+            "line": 54,
+            "function": "loginApi",
+            "class": "App\\Http\\Controllers\\Api\\AuthController",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php",
+            "line": 43,
+            "function": "callAction",
+            "class": "Illuminate\\Routing\\Controller",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+            "line": 265,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\ControllerDispatcher",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+            "line": 211,
+            "function": "runController",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 822,
+            "function": "run",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 180,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\app\\Http\\Middleware\\TrackUserActivity.php",
+            "line": 67,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "App\\Http\\Middleware\\TrackUserActivity",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php",
+            "line": 50,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 137,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 821,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 800,
+            "function": "runRouteWithinStack",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 764,
+            "function": "runRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 753,
+            "function": "dispatchToRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 200,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 180,
+            "function": "Illuminate\\Foundation\\Http\\{closure}",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+            "line": 21,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
+            "line": 31,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+            "line": 21,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
+            "line": 51,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php",
+            "line": 27,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\ValidatePostSize",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
+            "line": 109,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php",
+            "line": 61,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\HandleCors",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
+            "line": 58,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php",
+            "line": 22,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php",
+            "line": 26,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\ValidatePathEncoding",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 137,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 175,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 144,
+            "function": "sendRequestThroughRouter",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php",
+            "line": 1220,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\public\\index.php",
+            "line": 20,
+            "function": "handleRequest",
+            "class": "Illuminate\\Foundation\\Application",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php",
+            "line": 23,
+            "function": "require_once"
+        }
+    ]
+}
+2025-10-29 16:27:38,083 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:27:49,297 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 16:27:51,850 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 16:27:51,852 - INFO - Login realizado com sucesso para CPF: 123.456.789-01
+2025-10-29 16:28:45,136 - INFO - Usuário 123.456.789-01 fez logout
+2025-10-29 16:36:30,097 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:47:40,351 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 16:47:42,829 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 16:47:42,831 - INFO - Login realizado com sucesso para CPF: 123.456.789-01
+2025-10-29 16:47:42,835 - ERROR - Erro durante o login: cannot import name 'MainWindow' from 'ui.gui' (C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\ui\gui.py)
+2025-10-29 16:48:19,351 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:48:38,937 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 16:48:41,416 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 16:48:41,418 - INFO - Login realizado com sucesso para CPF: 123.456.789-01
+2025-10-29 16:48:41,419 - ERROR - Erro durante o login: cannot import name 'MainWindow' from 'ui.gui' (C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\ui\gui.py)
+2025-10-29 16:48:54,759 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:49:06,742 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 16:49:09,237 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 16:49:09,239 - INFO - Login realizado com sucesso para CPF: 123.456.789-01
+2025-10-29 16:49:09,241 - ERROR - Erro durante o login: cannot import name 'MainWindow' from 'ui.gui' (C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\ui\gui.py)
+2025-10-29 16:52:26,344 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 16:52:44,646 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 16:52:47,180 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 16:52:47,181 - INFO - Login realizado com sucesso para CPF: 123.456.789-01
+2025-10-29 16:54:39,026 - INFO - Usuário 123.456.789-01 acessou impressão em lote
+2025-10-29 16:54:40,705 - INFO - Usuário 123.456.789-01 acessou reimpressão
+2025-10-29 16:56:44,307 - INFO - Usuário 123.456.789-01 acessou impressão em lote
+2025-10-29 17:00:47,074 - INFO - Usuário 123.456.789-01 fez logout
+2025-10-29 17:01:40,231 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:01:47,240 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:01:49,779 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:01:49,781 - INFO - Login realizado com sucesso para CPF: 123.456.789-01
+2025-10-29 17:04:45,333 - INFO - Usuário 123.456.789-01 fez logout
+2025-10-29 17:04:52,530 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:04:59,047 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:05:01,713 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:05:01,715 - INFO - Login realizado com sucesso para CPF: 123.456.789-01
+2025-10-29 17:05:01,824 - ERROR - Erro durante o login: 'MainWindow' object has no attribute 'name'
+2025-10-29 17:10:05,574 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:10:17,151 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:10:19,942 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:10:19,946 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:13:02,534 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-10-29 17:13:09,458 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:13:11,966 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:13:11,969 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:13:14,805 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-10-29 17:13:18,975 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:13:28,981 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:13:31,456 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:13:31,458 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:13:32,123 - ERROR - Erro durante o login: 'MainWindow' object has no attribute 'open_receive_load'
+2025-10-29 17:14:43,240 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:14:53,356 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:14:55,867 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:14:55,869 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:15:35,917 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:15:43,652 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:15:46,152 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:15:46,154 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:17:55,246 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-29 17:17:56,614 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-10-29 17:19:58,538 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:20:08,334 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:20:10,888 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:20:10,890 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:20:14,876 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-10-29 17:21:10,948 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-10-29 17:21:16,002 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:21:23,667 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:21:26,189 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:21:26,191 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:21:59,493 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:22:08,429 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:22:10,931 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:22:10,933 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:22:36,150 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-10-29 17:22:44,511 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:22:50,938 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:22:53,409 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:22:53,411 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:35:05,056 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:35:11,170 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:35:13,726 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:35:13,729 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:35:54,515 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:36:59,088 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:37:05,680 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:37:08,158 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:37:08,160 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:38:02,839 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:38:11,601 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:38:14,091 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:38:14,094 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:38:21,692 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de etiquetadora
+2025-10-29 17:38:24,428 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de etiquetadora
+2025-10-29 17:39:59,255 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:40:06,737 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:40:09,248 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:40:09,250 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:41:08,025 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:41:13,785 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:41:16,346 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:41:16,348 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:41:36,566 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:41:44,289 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:41:47,033 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:41:47,035 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:42:08,784 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:42:17,322 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:42:19,927 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:42:19,929 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:48:07,622 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:48:15,103 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:48:17,618 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:48:17,621 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:48:42,231 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:48:49,408 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:48:51,961 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:48:51,963 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:51:49,202 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:51:56,326 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:51:58,924 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:51:58,926 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:52:42,368 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:52:48,279 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:52:50,823 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:52:50,826 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:53:25,100 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:53:31,681 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:53:34,190 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:53:34,192 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:54:14,889 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:54:23,422 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:54:26,038 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:54:26,040 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:57:10,014 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:57:20,279 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:57:22,814 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:57:22,816 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:58:05,283 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:58:12,751 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:58:15,233 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:58:15,235 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:58:52,067 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:58:59,414 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 17:59:01,874 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 17:59:01,875 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 17:59:51,924 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 17:59:57,943 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 18:00:00,497 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 18:00:00,499 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 18:08:52,192 - INFO - Usuário Usuário Demo (CPF: 123.456.789-01) fez logout
+2025-10-29 18:10:11,561 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 18:10:18,155 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 18:10:20,657 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 18:10:20,659 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 18:11:41,833 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 18:11:50,859 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 18:11:53,345 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 18:11:53,347 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 18:16:16,071 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 18:16:41,941 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 18:16:44,508 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 18:16:44,511 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 18:22:23,208 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 18:22:28,940 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 18:22:31,470 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 18:22:31,472 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 18:45:14,083 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-29 18:45:39,522 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-29 18:45:47,376 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-29 18:45:49,888 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-29 18:45:49,890 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-29 18:45:51,783 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-29 18:45:51,934 - ERROR - Erro ao listar labels: 'APIClient' object has no attribute 'request'
+2025-10-29 18:45:51,934 - ERROR - Erro ao carregar labels: 'APIClient' object has no attribute 'request'
+2025-10-30 09:58:19,823 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 09:58:28,087 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 09:58:33,718 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 09:58:33,719 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 10:05:48,493 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 10:05:48,622 - ERROR - Erro ao listar labels: 'APIClient' object has no attribute 'request'
+2025-10-30 10:05:48,623 - ERROR - Erro ao carregar labels: 'APIClient' object has no attribute 'request'
+2025-10-30 10:20:26,792 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-10-30 10:22:12,174 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 10:22:20,925 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 10:22:23,396 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 10:22:23,398 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 10:22:25,399 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 10:22:25,531 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 10:22:27,742 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 10:22:27,743 - INFO - Listadas 1 labels da API
+2025-10-30 10:22:28,034 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 10:22:30,241 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 10:22:30,242 - INFO - Listadas 1 labels da API
+2025-10-30 10:23:26,287 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 10:23:26,366 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 10:23:28,582 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 10:23:28,584 - INFO - Listadas 1 labels da API
+2025-10-30 10:55:30,085 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 10:55:40,431 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 10:55:43,444 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 10:55:43,446 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 10:55:45,706 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 10:55:45,839 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 10:55:48,099 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 10:55:48,101 - INFO - Listadas 1 labels da API
+2025-10-30 10:59:35,115 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 11:07:07,150 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 11:32:00,342 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 11:33:23,745 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 11:34:29,428 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 11:35:29,345 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 11:40:02,774 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 11:40:09,912 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 11:40:12,466 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 11:40:12,468 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 11:47:05,901 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 11:47:06,045 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 11:47:08,310 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 11:47:08,311 - INFO - Listadas 1 labels da API
+2025-10-30 11:51:32,081 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 11:51:37,750 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 11:51:40,225 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 11:51:40,227 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 11:51:41,730 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 11:54:56,791 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 11:55:03,438 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 11:55:05,897 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 11:55:05,899 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 11:56:11,056 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 11:56:11,229 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 11:56:13,449 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 11:56:13,451 - INFO - Listadas 1 labels da API
+2025-10-30 11:59:06,651 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 11:59:12,325 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 11:59:14,822 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 11:59:14,824 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 12:00:10,094 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 12:00:10,256 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:00:12,461 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 12:00:12,463 - INFO - Listadas 1 labels da API
+2025-10-30 12:00:12,464 - ERROR - Erro ao abrir impressão em lote: setting "." as master creates a transient/master cycle
+2025-10-30 12:00:23,031 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 12:00:23,118 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:00:25,310 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 12:00:25,311 - INFO - Listadas 1 labels da API
+2025-10-30 12:00:25,312 - ERROR - Erro ao abrir impressão em lote: setting "." as master creates a transient/master cycle
+2025-10-30 12:01:23,245 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 12:01:29,398 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:01:31,874 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 12:01:31,876 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 12:02:29,269 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 12:02:29,440 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:02:31,682 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 12:02:31,684 - INFO - Listadas 1 labels da API
+2025-10-30 12:04:10,005 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 12:04:17,662 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:04:20,130 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 12:04:20,132 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 12:04:24,436 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 12:04:24,614 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:04:26,823 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 12:04:26,825 - INFO - Listadas 1 labels da API
+2025-10-30 12:05:53,706 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 12:06:00,913 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:06:03,378 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 12:06:03,379 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 12:06:04,835 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 12:06:04,992 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:06:07,190 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 12:06:07,192 - INFO - Listadas 1 labels da API
+2025-10-30 12:09:14,876 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 12:09:21,020 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:09:23,502 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 12:09:23,503 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 12:09:25,235 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 12:09:25,398 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:09:27,641 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 12:09:27,643 - INFO - Listadas 1 labels da API
+2025-10-30 12:11:49,375 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 12:11:56,379 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:11:58,905 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 12:11:58,907 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 12:12:48,027 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 12:12:48,239 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:12:50,431 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 12:12:50,433 - INFO - Listadas 1 labels da API
+2025-10-30 12:12:58,220 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-10-30 12:19:10,672 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 12:19:18,220 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:19:20,678 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 12:19:20,680 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 12:19:23,551 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-10-30 12:19:50,590 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 12:19:56,113 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 12:19:58,617 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 12:19:58,620 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 12:20:30,565 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-10-30 12:29:38,945 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de etiquetadora
+2025-10-30 13:14:32,745 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 13:14:42,514 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 13:14:44,979 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 13:14:44,981 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 13:14:47,421 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de impressoras
+2025-10-30 13:14:47,433 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 13:14:47,436 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 13:14:47,616 - ERROR - Erro ao carregar impressoras: 'PrinterConfigWindow' object has no attribute 'self'
+2025-10-30 15:09:06,474 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 15:09:13,680 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 15:09:19,062 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 15:09:19,070 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 15:09:26,134 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de impressoras
+2025-10-30 15:09:26,142 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:09:26,143 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:10:43,987 - INFO - Configurações salvas com sucesso
+2025-10-30 15:10:43,988 - INFO - Impressora de rede adicionada: Zebra ADM 135
+2025-10-30 15:10:49,274 - INFO - Configurações salvas com sucesso
+2025-10-30 15:10:49,275 - INFO - Impressora padrão alterada para: Zebra ADM 135
+2025-10-30 15:12:10,478 - INFO - Configuração de impressoras fechada
+2025-10-30 15:13:44,178 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 15:13:58,441 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 15:14:01,942 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 15:14:01,949 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 15:14:08,099 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de impressoras
+2025-10-30 15:14:08,105 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:14:08,106 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:16:05,317 - INFO - Configuração de impressoras fechada
+2025-10-30 15:21:30,258 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 15:21:39,110 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 15:21:42,573 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 15:21:42,578 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 15:21:48,760 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de impressoras
+2025-10-30 15:21:48,828 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:21:48,828 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:22:19,762 - WARNING - Falha na conexão de rede: 192.168.1.100:9100
+2025-10-30 15:24:39,794 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 15:24:49,132 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 15:24:51,568 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 15:24:51,570 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 15:24:54,735 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de impressoras
+2025-10-30 15:24:54,742 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:24:54,743 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:26:16,061 - INFO - Configuração de impressoras fechada
+2025-10-30 15:28:51,506 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 15:28:57,361 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 15:29:01,000 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 15:29:01,007 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 15:29:05,726 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de impressoras
+2025-10-30 15:29:05,732 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:29:05,733 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:29:29,732 - INFO - Configurações salvas com sucesso
+2025-10-30 15:29:29,733 - INFO - Impressora removida: Zebra GK420t Rede (ID: network_printer)
+2025-10-30 15:29:35,792 - INFO - Configurações salvas com sucesso
+2025-10-30 15:29:35,793 - INFO - Impressora removida: Zebra GK420t USB (ID: usb_printer)
+2025-10-30 15:29:50,978 - INFO - Conexão de rede bem-sucedida: 192.168.99.135:9100
+2025-10-30 15:30:02,991 - INFO - Conexão de rede bem-sucedida: 192.168.99.135:9100
+2025-10-30 15:30:02,998 - INFO - Padrão de teste enviado para 192.168.99.135:9100
+2025-10-30 15:31:32,324 - INFO - Configurações salvas com sucesso
+2025-10-30 15:31:32,325 - INFO - Impressora editada: Zebra ADM 135
+2025-10-30 15:35:37,243 - INFO - Configuração de impressoras fechada
+2025-10-30 15:58:49,917 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 15:59:37,297 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 15:59:40,772 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 15:59:40,778 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 15:59:43,661 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de impressoras
+2025-10-30 15:59:43,692 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:59:43,693 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 15:59:49,151 - INFO - Conexão de rede bem-sucedida: 192.168.99.135:9100
+2025-10-30 15:59:49,166 - INFO - Padrão de teste enviado para 192.168.99.135:9100
+2025-10-30 16:10:04,878 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 16:10:16,080 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:10:19,461 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 16:10:19,466 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 16:10:23,939 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de impressoras
+2025-10-30 16:10:23,969 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:10:23,969 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:10:27,398 - INFO - Fechando janela de configuração de impressoras
+2025-10-30 16:10:27,430 - INFO - Configuração de impressoras fechada
+2025-10-30 16:10:31,269 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 16:10:31,272 - INFO - LabelPrinter inicializada: Zebra ADM 135
+2025-10-30 16:10:31,402 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:10:34,272 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 16:10:34,279 - INFO - Listadas 1 labels da API
+2025-10-30 16:10:45,308 - INFO - Imprimindo sequência 00000068 até 00000068
+2025-10-30 16:10:45,311 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:10:47,929 - DEBUG - http://localhost:8000 "PUT /api/labels/1 HTTP/1.1" 200 None
+2025-10-30 16:10:47,934 - INFO - Label 1: last_number atualizado para 68
+2025-10-30 16:10:47,952 - ERROR - Erro na impressão: 'LabelPrinter' object has no attribute 'config'
+2025-10-30 16:33:51,927 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 16:33:57,616 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:34:01,296 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 16:34:01,321 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 16:34:06,742 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:34:06,743 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 16:34:06,745 - INFO - LabelPrinter inicializada: Zebra ADM 135
+2025-10-30 16:34:06,745 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:34:06,952 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:34:09,238 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 16:34:09,240 - INFO - Listadas 1 labels da API
+2025-10-30 16:34:23,403 - INFO - Imprimindo sequência 00000069 até 00000069
+2025-10-30 16:34:23,409 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:34:26,030 - DEBUG - http://localhost:8000 "PUT /api/labels/1 HTTP/1.1" 200 None
+2025-10-30 16:34:26,035 - INFO - Label 1: last_number atualizado para 69
+2025-10-30 16:34:26,056 - ERROR - Erro na impressão: Nenhuma impressora selecionada
+2025-10-30 16:36:54,975 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de impressoras
+2025-10-30 16:36:54,977 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:36:58,571 - INFO - Fechando janela de configuração de impressoras
+2025-10-30 16:36:58,622 - INFO - Configuração de impressoras fechada
+2025-10-30 16:37:00,923 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 16:37:00,927 - INFO - LabelPrinter inicializada: Zebra ADM 135
+2025-10-30 16:37:00,927 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:37:01,087 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:37:03,839 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 16:37:03,846 - INFO - Listadas 1 labels da API
+2025-10-30 16:37:13,627 - INFO - Imprimindo sequência 00000070 até 00000070
+2025-10-30 16:37:13,631 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:37:16,234 - DEBUG - http://localhost:8000 "PUT /api/labels/1 HTTP/1.1" 200 None
+2025-10-30 16:37:16,239 - INFO - Label 1: last_number atualizado para 70
+2025-10-30 16:37:16,247 - ERROR - Erro na impressão: Nenhuma impressora selecionada
+2025-10-30 16:41:26,807 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 16:41:33,006 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:41:36,599 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 16:41:36,604 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 16:41:39,559 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:41:39,560 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 16:41:39,563 - INFO - LabelPrinter inicializada: Zebra ADM 135
+2025-10-30 16:41:39,563 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:41:39,748 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:41:42,071 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 16:41:42,074 - INFO - Listadas 1 labels da API
+2025-10-30 16:41:47,488 - INFO - Imprimindo sequência 00000071 até 00000071
+2025-10-30 16:41:47,491 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:41:49,768 - DEBUG - http://localhost:8000 "PUT /api/labels/1 HTTP/1.1" 200 None
+2025-10-30 16:41:49,770 - INFO - Label 1: last_number atualizado para 71
+2025-10-30 16:41:49,792 - INFO - Display selecionado: ''
+2025-10-30 16:41:49,793 - INFO - Impressoras configuradas: ['\u2b50 Zebra ADM 135 (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-10-30 16:41:49,793 - ERROR - Erro na impressão: Por favor, selecione uma impressora no combobox
+2025-10-30 16:51:03,972 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-10-30 16:51:13,717 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 16:51:22,168 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:51:25,800 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 16:51:25,806 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 16:51:44,507 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:51:44,508 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 16:51:44,510 - INFO - LabelPrinter inicializada: Zebra ADM 135
+2025-10-30 16:51:44,511 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:51:44,702 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:51:47,028 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 16:51:47,034 - INFO - Listadas 1 labels da API
+2025-10-30 16:51:54,084 - INFO - Imprimindo sequência 00000072 até 00000072
+2025-10-30 16:51:54,089 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:51:56,729 - DEBUG - http://localhost:8000 "PUT /api/labels/1 HTTP/1.1" 200 None
+2025-10-30 16:51:56,736 - INFO - Label 1: last_number atualizado para 72
+2025-10-30 16:51:56,758 - INFO - Display selecionado: '\u2b50 Zebra ADM 135 (network)'
+2025-10-30 16:51:56,759 - INFO - Impressoras configuradas: ['\u2b50 Zebra ADM 135 (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-10-30 16:51:56,762 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-10-30 16:51:56,764 - INFO - Impressora: Zebra ADM 135
+2025-10-30 16:51:56,765 - INFO - Impressora alterada para: Zebra ADM 135
+2025-10-30 16:51:56,765 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-10-30 16:51:56,787 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-10-30 16:51:56,788 - INFO - Impressão concluída: 1 etiquetas da label teste1
+2025-10-30 16:52:21,095 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de impressoras
+2025-10-30 16:52:21,099 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:53:09,236 - INFO - Configurações salvas com sucesso
+2025-10-30 16:53:09,237 - INFO - Impressora de rede adicionada: 135 - Zebra
+2025-10-30 16:53:16,555 - INFO - Configurações salvas com sucesso
+2025-10-30 16:53:16,555 - INFO - Impressora padrão alterada para: 135 - Zebra
+2025-10-30 16:53:22,538 - INFO - Conexão de rede bem-sucedida: 192.168.99.135:9100
+2025-10-30 16:53:22,546 - INFO - Padrão de teste enviado para 192.168.99.135:9100
+2025-10-30 16:54:14,379 - INFO - Fechando janela de configuração de impressoras
+2025-10-30 16:54:14,423 - INFO - Configuração de impressoras fechada
+2025-10-30 16:54:15,950 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 16:54:15,953 - INFO - LabelPrinter inicializada: Zebra ADM 135
+2025-10-30 16:54:15,954 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:54:16,119 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:54:18,720 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 16:54:18,725 - INFO - Listadas 1 labels da API
+2025-10-30 16:54:25,218 - INFO - Imprimindo sequência 00000073 até 00000073
+2025-10-30 16:54:25,232 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:54:27,872 - DEBUG - http://localhost:8000 "PUT /api/labels/1 HTTP/1.1" 200 None
+2025-10-30 16:54:27,877 - INFO - Label 1: last_number atualizado para 73
+2025-10-30 16:54:27,888 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-10-30 16:54:27,888 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-10-30 16:54:27,894 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-10-30 16:54:27,894 - INFO - Impressora: Zebra ADM 135
+2025-10-30 16:54:27,895 - ERROR - Impressora network_1761853989 não encontrada
+2025-10-30 16:54:27,896 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-10-30 16:54:27,905 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-10-30 16:54:27,906 - INFO - Impressão concluída: 1 etiquetas da label teste1
+2025-10-30 16:58:38,695 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-10-30 16:58:47,324 - INFO - Iniciando aplicação GUI (versão simples)
+2025-10-30 16:58:53,494 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:58:57,585 - ERROR - Erro durante o login: Erro de conexão - verifique a conectividade com a API
+2025-10-30 16:59:03,169 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:59:07,249 - ERROR - Erro durante o login: Erro de conexão - verifique a conectividade com a API
+2025-10-30 16:59:39,387 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:59:41,966 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-10-30 16:59:41,970 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-10-30 16:59:45,306 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:59:45,307 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-10-30 16:59:45,310 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-10-30 16:59:45,310 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 16:59:45,521 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:59:47,775 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-10-30 16:59:47,778 - INFO - Listadas 1 labels da API
+2025-10-30 16:59:53,173 - INFO - Imprimindo sequência 00000074 até 00000074
+2025-10-30 16:59:53,186 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 16:59:55,793 - DEBUG - http://localhost:8000 "PUT /api/labels/1 HTTP/1.1" 200 None
+2025-10-30 16:59:55,799 - INFO - Label 1: last_number atualizado para 74
+2025-10-30 16:59:55,804 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-10-30 16:59:55,805 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-10-30 16:59:55,809 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-10-30 16:59:55,810 - INFO - Impressora: 135 - Zebra
+2025-10-30 16:59:55,810 - INFO - Impressora alterada para: 135 - Zebra
+2025-10-30 16:59:55,811 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-10-30 16:59:55,882 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-10-30 16:59:55,883 - INFO - Impressão concluída: 1 etiquetas da label teste1
+2025-10-30 17:00:23,451 - INFO - Imprimindo sequência 00000075 até 00000078
+2025-10-30 17:00:23,455 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 17:00:26,044 - DEBUG - http://localhost:8000 "PUT /api/labels/1 HTTP/1.1" 200 None
+2025-10-30 17:00:26,050 - INFO - Label 1: last_number atualizado para 78
+2025-10-30 17:00:26,058 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-10-30 17:00:26,058 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-10-30 17:00:26,062 - INFO - Enviando job de impressão: 4 etiqueta(s) via printer
+2025-10-30 17:00:26,062 - INFO - Impressora: 135 - Zebra
+2025-10-30 17:00:26,079 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-10-30 17:00:26,081 - INFO - Impressão concluída: 4 etiquetas da label teste1
+2025-10-30 17:00:45,855 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-10-30 17:00:45,858 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-10-30 17:00:45,858 - INFO - Configurações de impressora carregadas com sucesso
+2025-10-30 17:00:59,537 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 17:01:02,163 - DEBUG - http://localhost:8000 "GET /api/cargos/code/00000078 HTTP/1.1" 404 None
+2025-10-30 17:01:02,168 - INFO - Cargo não encontrado: código 00000078
+2025-10-30 17:01:40,754 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-10-30 17:01:43,588 - DEBUG - http://localhost:8000 "GET /api/cargos/code/080000017 HTTP/1.1" 200 None
+2025-10-30 17:01:43,594 - INFO - Cargo encontrado: código 080000017
+2025-10-30 17:01:43,595 - INFO - Cargo encontrado para reimpressão: 080000017
+2025-10-30 17:01:50,755 - INFO - Iniciando reimpressão: 1x código 080000017
+2025-10-30 17:01:50,759 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-10-30 17:01:50,760 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-10-30 17:01:50,763 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-10-30 17:01:50,764 - INFO - Impressora: 135 - Zebra
+2025-10-30 17:01:50,764 - INFO - Impressora alterada para: 135 - Zebra
+2025-10-30 17:01:50,765 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-10-30 17:01:50,770 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-10-30 17:01:50,771 - INFO - Reimpressão concluída: 1 etiquetas do código 080000017
+2025-10-30 17:02:52,069 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout

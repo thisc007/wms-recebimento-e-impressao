@@ -1,8 +1,12 @@
-from src.utils.logger import setup_logging
-from src.ui.menu import Menu
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from utils.logger import setup_logger
+from ui.menu import Menu
 
 def main():
-    setup_logging()
+    setup_logger()
     menu = Menu()
     menu.display()
 

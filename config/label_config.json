@@ -1,0 +1,42 @@
+{
+  "label_defaults": {
+    "dpi": 203,
+    "width_mm": 90,
+    "height_mm": 70,
+    "top_offset_dots": 0,
+    "left_shift_dots": 0,
+    "barcode_module_width": 3,
+    "barcode_ratio": 2,
+    "barcode_vertical_module_width": 3,
+    "barcode_vertical_ratio": 2,
+    "barcode_horizontal_module_width": 3,
+    "barcode_horizontal_ratio": 2,
+    "text": {
+      "x": 150,
+      "y": 50,
+      "font": "0",
+      "height": 30,
+      "width": 30
+    },
+    "barcode_horizontal": {
+      "x": 120,
+      "y": 100,
+      "orientation": "N",
+      "height": 60
+    },
+    "barcode_vertical": {
+      "x": 30,
+      "y": 30,
+      "orientation": "R",
+      "height": 200
+    }
+  },
+  "printer_config": {
+    "output_mode": "file",
+    "printer_host": "127.0.0.1",
+    "printer_port": 9100,
+    "windows_printer_share": null,
+    "output_dir": "./out",
+    "timeout": 10
+  }
+}
