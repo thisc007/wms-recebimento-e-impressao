@@ -176,6 +176,41 @@ class PrinterConfigManager:
         return {pid: config for pid, config in printers.items() 
                 if config.get('enabled', False)}
     
+    def list_printers(self) -> List[Dict[str, Any]]:
+        """
+        Lista todas as impressoras em formato de lista
+        
+        Returns:
+            Lista de dicionários com configurações das impressoras
+        """
+        printers = self.config.get('printers', {})
+        default_id = self.config.get('default_printer')
+        
+        printer_list = []
+        for printer_id, config in printers.items():
+            # Adicionar informações úteis para exibição
+            printer_info = {
+                'id': printer_id,
+                'name': config.get('name', 'Sem nome'),
+                'type': config.get('type', 'unknown'),
+                'enabled': config.get('enabled', False),
+                'is_default': (printer_id == default_id),
+                'connection_type': config.get('connection', {}).get('mode', 'unknown')
+            }
+            
+            # Adicionar informações de conexão específicas
+            connection = config.get('connection', {})
+            if connection.get('mode') == 'network':
+                printer_info['connection_details'] = f"{connection.get('ip_address', 'N/A')}:{connection.get('port', 9100)}"
+            elif connection.get('mode') == 'usb':
+                printer_info['connection_details'] = connection.get('device_name', 'N/A')
+            else:
+                printer_info['connection_details'] = 'N/A'
+            
+            printer_list.append(printer_info)
+        
+        return printer_list
+    
     def add_printer(self, printer_config: Dict[str, Any]) -> bool:
         """
         Adiciona nova impressora

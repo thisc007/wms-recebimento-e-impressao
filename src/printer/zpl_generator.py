@@ -56,7 +56,7 @@ class ZplGenerator:
             'barcode_ratio': 2,
             'barcode_vertical_module_width': 2,
             'barcode_vertical_ratio': 2,
-            'barcode_horizontal_module_width': 4,
+            'barcode_horizontal_module_width': 3,
             'barcode_horizontal_ratio': 2,
             'pad_length': 8,
             
@@ -65,16 +65,16 @@ class ZplGenerator:
                 'font': 'A',
                 'height': 30,
                 'width': 30,
-                'x': 210,
+                'x': 200,
                 'y': 250
             },
             
             # Barcode horizontal
             'barcode_horizontal': {
                 'orientation': 'N',
-                'height': 120,
-                'x': 200,
-                'y': 400
+                'height': 90,
+                'x': 220,
+                'y': 430
             },
             
             # Barcode vertical
@@ -90,12 +90,13 @@ class ZplGenerator:
         """Formata número com 8 dígitos com zeros à esquerda"""
         return str(n).zfill(8)
     
-    def build_zpl(self, code: str) -> str:
+    def build_zpl(self, code: str, cargo_data: Dict[str, Any] = None) -> str:
         """
         Gera código ZPL para uma etiqueta
         
         Args:
             code: Código a ser impresso na etiqueta
+            cargo_data: Dados opcionais da carga (priority, special_handling, expiration, etc)
             
         Returns:
             Código ZPL completo
@@ -155,9 +156,106 @@ class ZplGenerator:
         zpl += f"^BC{bh['orientation']},{bh['height']},N,N,N\n"
         zpl += f"^FD{code}^FS\n"
         
+        # Adicionar indicadores especiais se cargo_data fornecido
+        if cargo_data:
+            zpl += self._add_special_indicators(cargo_data)
+        
         zpl += "^XZ\n"
         
         return zpl
+    
+    def _add_special_indicators(self, cargo_data: Dict[str, Any]) -> str:
+        """
+        Adiciona indicadores visuais especiais na etiqueta
+        
+        Args:
+            cargo_data: Dados da carga com flags especiais
+            
+        Returns:
+            Código ZPL com indicadores
+        """
+        indicators_zpl = ""
+        
+        # ═══════════════════════════════════════════════════════════════════
+        # ⚙️ CONFIGURAÇÃO INDEPENDENTE DE CADA INDICADOR
+        # ═══════════════════════════════════════════════════════════════════
+        # Ajuste as posições X, Y e tamanhos de fonte de cada indicador
+        # Coordenadas em dots (203 DPI = 8 dots por mm)
+        # Área da etiqueta: 719 x 559 dots (90mm x 70mm)
+        
+        # 🔴 INDICADOR DE PRIORIDADE (⚠️)
+        priority_x = 560        # Posição horizontal (em dots)
+        priority_y = 240        # Posição vertical (em dots)
+        priority_font_h = 80    # Altura da fonte (em dots)
+        priority_font_w = 80    # Largura da fonte (em dots)
+        priority_text = "P"  # Texto do indicador
+        
+        # 🟠 INDICADOR DE MANUSEIO ESPECIAL (🔶)
+        special_x = 610         # Posição horizontal (em dots)
+        special_y = 240         # Posição vertical (em dots)
+        special_font_h = 80     # Altura da fonte (em dots)
+        special_font_w = 80     # Largura da fonte (em dots)
+        special_text = "M"  # Texto do indicador
+        
+        # 🟡 INDICADOR DE DATA DE VALIDADE (📅)
+        expiration_x = 210      # Posição horizontal (em dots)
+        expiration_y = 300      # Posição vertical (em dots)
+        expiration_font_h = 30  # Altura da fonte (em dots)
+        expiration_font_w = 30  # Largura da fonte (em dots)
+        
+        # 🟢 INDICADOR DE INSTRUÇÕES (📋)
+        instructions_x = 210    # Posição horizontal (em dots)
+        instructions_y = 380    # Posição vertical (em dots)
+        instructions_font_h = 25  # Altura da fonte (em dots)
+        instructions_font_w = 25  # Largura da fonte (em dots)
+        
+        # ═══════════════════════════════════════════════════════════════════
+        
+        # ⚠️ CARGA PRIORITÁRIA
+        if cargo_data.get('is_priority'):
+            indicators_zpl += f"^FO{priority_x},{priority_y}\n"
+            indicators_zpl += f"^A0N,{priority_font_h},{priority_font_w}\n"
+            indicators_zpl += f"^FD{priority_text}^FS\n"
+        
+        # 🔶 MANUSEIO ESPECIAL
+        if cargo_data.get('requires_special_handling'):
+            indicators_zpl += f"^FO{special_x},{special_y}\n"
+            indicators_zpl += f"^A0N,{special_font_h},{special_font_w}\n"
+            indicators_zpl += f"^FD{special_text}^FS\n"
+        
+        # 📅 DATA DE VALIDADE
+        expiration_date = cargo_data.get('expiration_date')
+        if expiration_date:
+            # Formatar data (assumindo formato ISO ou brasileiro)
+            try:
+                from datetime import datetime
+                if 'T' in expiration_date:
+                    # ISO format
+                    dt = datetime.fromisoformat(expiration_date.replace('Z', '+00:00'))
+                    formatted_date = dt.strftime('%d/%m/%Y')
+                else:
+                    # Já está formatado
+                    formatted_date = expiration_date[:10]
+                
+                indicators_zpl += f"^FO{expiration_x},{expiration_y}\n"
+                indicators_zpl += f"^A0N,{expiration_font_h},{expiration_font_w}\n"
+                indicators_zpl += f"^FDVal:{formatted_date}^FS\n"
+            except:
+                pass  # Se falhar, não adiciona
+        
+        # 📋 INSTRUÇÕES DE MANUSEIO (se houver)
+        handling_instructions = cargo_data.get('handling_instructions')
+        if handling_instructions and len(handling_instructions) > 0:
+            # Truncar se muito longo
+            instructions_short = handling_instructions[:30]
+            if len(handling_instructions) > 30:
+                instructions_short += "..."
+            
+            indicators_zpl += f"^FO{instructions_x},{instructions_y}\n"
+            indicators_zpl += f"^A0N,{instructions_font_h},{instructions_font_w}\n"
+            indicators_zpl += f"^FD{instructions_short}^FS\n"
+        
+        return indicators_zpl
     
     def build_batch_zpl(self, start_code: int, quantity: int) -> str:
         """

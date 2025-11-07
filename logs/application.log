@@ -1456,3 +1456,1200 @@
 2025-10-30 17:01:50,770 - INFO - ZPL enviado para impressora 192.168.99.135:9100
 2025-10-30 17:01:50,771 - INFO - Reimpressão concluída: 1 etiquetas do código 080000017
 2025-10-30 17:02:52,069 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-11-03 14:49:17,558 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 14:49:25,014 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 14:49:27,547 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 14:49:27,548 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 14:50:14,141 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 14:50:20,948 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 14:50:23,447 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 14:50:23,449 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 15:01:54,447 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 15:02:02,671 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 15:02:05,165 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 15:02:05,167 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 15:02:07,186 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 15:02:19,667 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 15:02:21,954 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 500 None
+2025-11-03 15:02:21,956 - ERROR - Erro ao buscar carga 010000031: Erro HTTP 500
+2025-11-03 16:14:12,453 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 16:14:19,360 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:14:21,804 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 16:14:21,806 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 16:14:26,132 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 16:14:26,132 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 16:14:26,134 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 16:14:26,134 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 16:14:26,144 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:14:28,388 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 16:14:28,390 - INFO - Carregados 2 galpões
+2025-11-03 16:14:28,421 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:14:30,643 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 16:14:30,646 - ERROR - Erro ao carregar áreas: 'ReceiveLoadWindow' object has no attribute 'area_combo'
+2025-11-03 16:14:30,646 - ERROR - Erro ao abrir recebimento de carga: 'ReceiveLoadWindow' object has no attribute 'area_combo'
+2025-11-03 16:17:07,631 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 16:17:12,790 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:17:15,294 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 16:17:15,297 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 16:17:17,160 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 16:17:17,160 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 16:17:17,162 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 16:17:17,163 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 16:17:17,174 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:17:19,385 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 16:17:19,386 - INFO - Carregados 2 galpões
+2025-11-03 16:17:19,419 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:17:21,620 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 16:17:21,621 - INFO - Carregadas 5 áreas
+2025-11-03 16:17:21,667 - ERROR - Erro ao carregar impressoras: 'PrinterConfigManager' object has no attribute 'list_printers'
+2025-11-03 16:17:25,625 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:17:27,852 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 16:17:27,853 - INFO - Carregadas 5 áreas
+2025-11-03 16:17:53,740 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:17:55,928 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 500 None
+2025-11-03 16:45:24,854 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:45:27,209 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 500 None
+2025-11-03 16:45:39,994 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-11-03 16:50:43,682 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 16:51:54,407 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:51:57,064 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 16:51:57,067 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 16:51:58,866 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 16:51:58,866 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 16:51:58,868 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 16:51:58,869 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 16:51:58,882 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:52:01,193 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 16:52:01,196 - INFO - Carregados 2 galpões
+2025-11-03 16:52:01,255 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:52:03,509 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 16:52:03,512 - INFO - Carregadas 5 áreas
+2025-11-03 16:52:03,583 - ERROR - Erro ao carregar impressoras: 'PrinterConfigManager' object has no attribute 'list_printers'
+2025-11-03 16:52:12,476 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:52:14,725 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 16:52:14,728 - INFO - Carregadas 5 áreas
+2025-11-03 16:53:14,232 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:53:16,497 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 500 None
+2025-11-03 16:56:43,126 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 16:56:45,548 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 500 None
+2025-11-03 16:56:53,539 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-11-03 17:00:17,729 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 17:00:24,167 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:00:26,997 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 17:00:27,001 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 17:00:29,416 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:00:29,417 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 17:00:29,419 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 17:00:29,419 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:00:29,435 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:00:31,811 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 17:00:31,815 - INFO - Carregados 2 galpões
+2025-11-03 17:00:31,954 - ERROR - Erro ao carregar impressoras: 'PrinterConfigManager' object has no attribute 'list_printers'
+2025-11-03 17:01:34,010 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 17:01:40,478 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:01:43,076 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 17:01:43,078 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 17:01:44,974 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:01:44,975 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 17:01:44,978 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 17:01:44,979 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:01:44,994 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:01:47,283 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 17:01:47,286 - INFO - Carregados 2 galpões
+2025-11-03 17:01:47,454 - ERROR - Erro ao carregar impressoras: 'PrinterConfigManager' object has no attribute 'list_printers'
+2025-11-03 17:02:23,980 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 17:02:29,424 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:02:32,383 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 17:02:32,387 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 17:02:36,000 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:02:36,000 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 17:02:36,002 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 17:02:36,002 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:02:36,016 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:02:38,287 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 17:02:38,289 - INFO - Carregados 2 galpões
+2025-11-03 17:02:38,415 - ERROR - Erro ao carregar impressoras: 'PrinterConfigManager' object has no attribute 'list_printers'
+2025-11-03 17:02:46,723 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:02:49,018 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 17:02:49,021 - INFO - Carregadas 5 áreas
+2025-11-03 17:03:04,362 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:03:06,670 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 500 None
+2025-11-03 17:13:13,474 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 17:13:23,009 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:13:26,661 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 17:13:26,668 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 17:13:29,703 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:13:29,704 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-03 17:13:29,706 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 17:13:29,707 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:13:39,021 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 17:13:39,022 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 17:13:39,023 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:13:39,035 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:13:41,281 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 17:13:41,283 - INFO - Carregados 2 galpões
+2025-11-03 17:13:41,344 - ERROR - Erro ao carregar impressoras: 'PrinterConfigManager' object has no attribute 'list_printers'
+2025-11-03 17:15:24,476 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 17:15:30,780 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:15:34,466 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 17:15:34,472 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 17:15:37,776 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:15:37,777 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 17:15:37,779 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 17:15:37,779 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:15:37,790 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:15:40,365 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 17:15:40,371 - INFO - Carregados 2 galpões
+2025-11-03 17:15:40,506 - INFO - Tentando carregar impressoras: 2 encontradas
+2025-11-03 17:15:40,506 - INFO - Impressora adicionada: Zebra ADM 135 (network)
+2025-11-03 17:15:40,507 - INFO - Impressora adicionada: \u2b50 135 - Zebra (network)
+2025-11-03 17:15:40,511 - INFO - Carregadas 2 impressoras configuradas
+2025-11-03 17:15:54,286 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:15:56,982 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 17:15:56,988 - INFO - Carregadas 5 áreas
+2025-11-03 17:15:58,995 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:16:01,645 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 17:16:01,650 - INFO - Carregadas 5 áreas
+2025-11-03 17:16:39,076 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:16:41,885 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-03 17:16:41,892 - INFO - Carga 010000031 encontrada
+2025-11-03 17:16:52,385 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:16:55,204 - DEBUG - http://localhost:8000 "POST /api/cargos/56/receive-physically HTTP/1.1" 500 None
+2025-11-03 17:20:56,562 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 17:21:05,039 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:21:08,781 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 17:21:08,788 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 17:21:14,057 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:21:14,058 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 17:21:14,059 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 17:21:14,060 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:21:14,069 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:21:16,782 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 17:21:16,789 - INFO - Carregados 2 galpões
+2025-11-03 17:21:16,879 - INFO - Tentando carregar impressoras: 2 encontradas
+2025-11-03 17:21:16,880 - INFO - Impressora adicionada: Zebra ADM 135 (network)
+2025-11-03 17:21:16,880 - INFO - Impressora adicionada: \u2b50 135 - Zebra (network)
+2025-11-03 17:21:16,884 - INFO - Carregadas 2 impressoras configuradas
+2025-11-03 17:21:22,015 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:21:24,670 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 17:21:24,676 - INFO - Carregadas 5 áreas
+2025-11-03 17:21:51,189 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:21:53,987 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-03 17:21:53,996 - INFO - Carga 010000031 encontrada
+2025-11-03 17:21:59,456 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:22:02,202 - DEBUG - http://localhost:8000 "POST /api/cargos/56/receive-physically HTTP/1.1" 500 None
+2025-11-03 17:34:40,717 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 17:34:47,244 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:34:50,725 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 17:34:50,730 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 17:34:53,740 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:34:53,740 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 17:34:53,742 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 17:34:53,742 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:34:53,754 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:34:56,023 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 17:34:56,026 - INFO - Carregados 2 galpões
+2025-11-03 17:34:56,133 - INFO - Tentando carregar impressoras: 2 encontradas
+2025-11-03 17:34:56,133 - INFO - Impressora adicionada: Zebra ADM 135 (network)
+2025-11-03 17:34:56,133 - INFO - Impressora adicionada: \u2b50 135 - Zebra (network)
+2025-11-03 17:34:56,139 - INFO - Carregadas 2 impressoras configuradas
+2025-11-03 17:34:58,556 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:35:00,869 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 17:35:00,872 - INFO - Carregadas 5 áreas
+2025-11-03 17:35:21,353 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:35:24,239 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-03 17:35:24,247 - INFO - Carga 010000031 encontrada
+2025-11-03 17:35:29,412 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:35:32,085 - DEBUG - http://localhost:8000 "POST /api/cargos/56/receive-physically HTTP/1.1" 422 None
+2025-11-03 17:38:19,350 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 17:38:25,198 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:38:28,734 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 17:38:28,742 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 17:39:03,906 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 17:39:09,461 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:39:12,972 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 17:39:12,977 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 17:39:36,238 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:39:36,238 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 17:39:36,240 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 17:39:36,241 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:39:36,249 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:39:39,072 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 17:39:39,080 - INFO - Carregados 2 galpões
+2025-11-03 17:39:39,168 - INFO - Tentando carregar impressoras: 2 encontradas
+2025-11-03 17:39:39,168 - INFO - Impressora adicionada: Zebra ADM 135 (network)
+2025-11-03 17:39:39,169 - INFO - Impressora adicionada: \u2b50 135 - Zebra (network)
+2025-11-03 17:39:39,173 - INFO - Carregadas 2 impressoras configuradas
+2025-11-03 17:39:42,346 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:39:44,973 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 17:39:44,979 - INFO - Carregadas 5 áreas
+2025-11-03 17:39:57,759 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:40:00,528 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-03 17:40:00,534 - INFO - Carga 010000031 encontrada
+2025-11-03 17:40:11,742 - INFO - Enviando para API - Cargo ID: 56
+2025-11-03 17:40:11,742 - INFO - Payload: {'warehouse_id': 2, 'action': 'accept', 'area_id': 2, 'area_type': 'RECEBIMENTO'}
+2025-11-03 17:40:11,743 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:40:14,411 - DEBUG - http://localhost:8000 "POST /api/cargos/56/receive-physically HTTP/1.1" 422 None
+2025-11-03 17:40:14,418 - INFO - Resposta da API - Status: 422
+2025-11-03 17:40:14,418 - ERROR - Erro da API (HTTP 422): {'success': False, 'message': 'Dados inválidos', 'errors': {'area_type': ['validation.in']}}
+2025-11-03 17:43:13,378 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:43:15,723 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-03 17:43:15,726 - INFO - Carga 010000031 encontrada
+2025-11-03 17:43:18,579 - INFO - Enviando para API - Cargo ID: 56
+2025-11-03 17:43:18,579 - INFO - Payload: {'warehouse_id': 2, 'action': 'accept', 'area_id': 2, 'area_type': 'RECEBIMENTO'}
+2025-11-03 17:43:18,581 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:43:20,891 - DEBUG - http://localhost:8000 "POST /api/cargos/56/receive-physically HTTP/1.1" 422 None
+2025-11-03 17:43:20,894 - INFO - Resposta da API - Status: 422
+2025-11-03 17:43:20,894 - ERROR - Erro da API (HTTP 422): {'success': False, 'message': 'Dados inválidos - Verifique os campos abaixo', 'errors': {'area_type': ['O campo area_type deve ser um dos seguintes valores: RECEIVING, CHECKING, STORAGE, PICKING, EXPEDITION, CONSOLIDATION, STAGING, QUALITY_CONTROL, QUARANTINE, RETURNS, MAINTENANCE, TRANSIT. Valor recebido: RECEBIMENTO']}, 'received_data': {'area_type': 'RECEBIMENTO', 'action': 'accept', 'warehouse_id': 2, 'area_id': 2}}
+2025-11-03 17:45:47,700 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 17:45:55,165 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:45:58,782 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 17:45:58,789 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 17:46:01,773 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:46:01,773 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 17:46:01,775 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 17:46:01,775 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:46:01,786 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:46:04,059 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 17:46:04,061 - INFO - Carregados 2 galpões
+2025-11-03 17:46:04,191 - INFO - Tentando carregar impressoras: 2 encontradas
+2025-11-03 17:46:04,191 - INFO - Impressora adicionada: Zebra ADM 135 (network)
+2025-11-03 17:46:04,192 - INFO - Impressora adicionada: \u2b50 135 - Zebra (network)
+2025-11-03 17:46:04,199 - INFO - Carregadas 2 impressoras configuradas
+2025-11-03 17:46:12,810 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:46:15,504 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 17:46:15,510 - INFO - Carregadas 5 áreas
+2025-11-03 17:46:23,572 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:46:26,380 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-03 17:46:26,388 - INFO - Carga 010000031 encontrada
+2025-11-03 17:46:30,702 - INFO - Enviando para API - Cargo ID: 56
+2025-11-03 17:46:30,702 - INFO - Payload: {'warehouse_id': 2, 'action': 'accept', 'area_id': 2, 'area_type': 'RECEIVING'}
+2025-11-03 17:46:30,704 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:46:33,524 - DEBUG - http://localhost:8000 "POST /api/cargos/56/receive-physically HTTP/1.1" 500 None
+2025-11-03 17:46:33,532 - INFO - Resposta da API - Status: 500
+2025-11-03 17:46:33,533 - ERROR - Erro da API (HTTP 500): {'success': False, 'message': 'Erro ao registrar recebimento físico: SQLSTATE[01000]: Warning: 1265 Data truncated for column \'movement_type\' at row 1 (Connection: mysql, SQL: insert into `cargo_movements` (`cargo_id`, `movement_type`, `from_address`, `to_address`, `from_area`, `to_area`, `old_status`, `new_status`, `notes`, `metadata`, `handled_by`, `movement_at`, `updated_at`, `created_at`) values (56, PHYSICAL_RECEIPT, ?, ?, {"physical_receipt":true,"action":"accept","warehouse_id":2,"area_id":2,"received_by":"Super User","received_by_id":1,"operator_email":"admin@milleniumtransportes.com.br","timestamp":"2025-11-03 17:46:33"}, ?, STORED, STORED, ?, ?, 1, 2025-11-03 17:46:33, 2025-11-03 17:46:33, 2025-11-03 17:46:33))'}
+2025-11-03 17:49:08,517 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 17:49:14,741 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:49:18,310 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 17:49:18,315 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 17:49:21,120 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:49:21,120 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 17:49:21,123 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 17:49:21,123 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 17:49:21,135 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:49:23,537 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 17:49:23,539 - INFO - Carregados 2 galpões
+2025-11-03 17:49:23,661 - INFO - Tentando carregar impressoras: 2 encontradas
+2025-11-03 17:49:23,662 - INFO - Impressora adicionada: Zebra ADM 135 (network)
+2025-11-03 17:49:23,662 - INFO - Impressora adicionada: \u2b50 135 - Zebra (network)
+2025-11-03 17:49:23,666 - INFO - Carregadas 2 impressoras configuradas
+2025-11-03 17:49:29,582 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:49:31,977 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 17:49:31,980 - INFO - Carregadas 5 áreas
+2025-11-03 17:49:50,461 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:49:53,223 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-03 17:49:53,229 - INFO - Carga 010000031 encontrada
+2025-11-03 17:49:56,891 - INFO - Enviando para API - Cargo ID: 56
+2025-11-03 17:49:56,892 - INFO - Payload: {'warehouse_id': 2, 'action': 'accept', 'area_id': 2, 'area_type': 'RECEIVING'}
+2025-11-03 17:49:56,893 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 17:49:59,832 - DEBUG - http://localhost:8000 "POST /api/cargos/56/receive-physically HTTP/1.1" 500 None
+2025-11-03 17:49:59,928 - INFO - Resposta da API - Status: 500
+2025-11-03 17:49:59,977 - ERROR - Erro da API (HTTP 500): {'success': False, 'message': 'Erro ao registrar recebimento físico: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column \'from_area\' at row 1 (Connection: mysql, SQL: insert into `cargo_movements` (`cargo_id`, `movement_type`, `from_address`, `to_address`, `from_area`, `to_area`, `old_status`, `new_status`, `notes`, `metadata`, `handled_by`, `movement_at`, `updated_at`, `created_at`) values (56, PHYSICAL_RECEIPT, ?, ?, {"physical_receipt":true,"action":"accept","warehouse_id":2,"area_id":2,"received_by":"Super User","received_by_id":1,"operator_email":"admin@milleniumtransportes.com.br","timestamp":"2025-11-03 17:49:59"}, ?, STORED, STORED, ?, ?, 1, 2025-11-03 17:49:59, 2025-11-03 17:49:59, 2025-11-03 17:49:59))'}
+2025-11-03 18:04:49,812 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 18:04:59,207 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:05:03,096 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 18:05:03,102 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 18:05:05,863 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 18:05:05,863 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 18:05:05,866 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 18:05:05,867 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 18:05:05,877 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:05:08,295 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 18:05:08,297 - INFO - Carregados 2 galpões
+2025-11-03 18:05:08,404 - INFO - Tentando carregar impressoras: 2 encontradas
+2025-11-03 18:05:08,404 - INFO - Impressora adicionada: Zebra ADM 135 (network)
+2025-11-03 18:05:08,404 - INFO - Impressora adicionada: \u2b50 135 - Zebra (network)
+2025-11-03 18:05:08,409 - INFO - Carregadas 2 impressoras configuradas
+2025-11-03 18:05:11,524 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:05:13,810 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 18:05:13,812 - INFO - Carregadas 5 áreas
+2025-11-03 18:05:28,444 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:05:31,250 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-03 18:05:31,257 - INFO - Carga 010000031 encontrada
+2025-11-03 18:05:35,358 - INFO - Enviando para API - Cargo ID: 56
+2025-11-03 18:05:35,358 - INFO - Payload: {'warehouse_id': 2, 'action': 'accept', 'area_id': 2, 'area_type': 'RECEIVING'}
+2025-11-03 18:05:35,359 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:05:38,173 - DEBUG - http://localhost:8000 "POST /api/cargos/56/receive-physically HTTP/1.1" 200 None
+2025-11-03 18:05:38,181 - INFO - Resposta da API - Status: 200
+2025-11-03 18:05:38,182 - INFO - Carga 010000031 processada: accept
+2025-11-03 18:05:38,183 - INFO - Gerando ZPL para código: 010000031
+2025-11-03 18:05:38,183 - INFO - Enviando para impressão: 1 etiqueta(s) do código 010000031
+2025-11-03 18:05:38,183 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-03 18:05:38,184 - INFO - Impressora: 135 - Zebra
+2025-11-03 18:05:38,184 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-03 18:05:38,185 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-03 18:05:38,197 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-03 18:05:38,198 - INFO - Impressão concluída: 1 etiquetas do código 010000031
+2025-11-03 18:07:37,071 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-03 18:07:45,019 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:07:48,869 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-03 18:07:48,876 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-03 18:08:54,053 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 18:08:54,053 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-03 18:08:54,055 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-03 18:08:54,057 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-03 18:08:54,071 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:08:56,408 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-03 18:08:56,411 - INFO - Carregados 2 galpões
+2025-11-03 18:08:56,577 - INFO - Tentando carregar impressoras: 2 encontradas
+2025-11-03 18:08:56,577 - INFO - Impressora adicionada: Zebra ADM 135 (network)
+2025-11-03 18:08:56,578 - INFO - Impressora adicionada: \u2b50 135 - Zebra (network)
+2025-11-03 18:08:56,584 - INFO - Carregadas 2 impressoras configuradas
+2025-11-03 18:09:02,959 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:09:05,254 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-03 18:09:05,257 - INFO - Carregadas 5 áreas
+2025-11-03 18:09:22,613 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:09:25,404 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-03 18:09:56,600 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:09:59,634 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=030000030&per_page=1 HTTP/1.1" 200 None
+2025-11-03 18:09:59,651 - INFO - Carga 030000030 encontrada
+2025-11-03 18:10:04,420 - INFO - Enviando para API - Cargo ID: 55
+2025-11-03 18:10:04,422 - INFO - Payload: {'warehouse_id': 2, 'action': 'accept', 'area_id': 2, 'area_type': 'RECEIVING'}
+2025-11-03 18:10:04,423 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:10:07,246 - DEBUG - http://localhost:8000 "POST /api/cargos/55/receive-physically HTTP/1.1" 200 None
+2025-11-03 18:10:07,252 - INFO - Resposta da API - Status: 200
+2025-11-03 18:10:07,253 - INFO - Carga 030000030 processada: accept
+2025-11-03 18:10:07,253 - INFO - Gerando ZPL para código: 030000030
+2025-11-03 18:10:07,256 - INFO - Enviando para impressão: 1 etiqueta(s) do código 030000030
+2025-11-03 18:10:07,256 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-03 18:10:07,256 - INFO - Impressora: 135 - Zebra
+2025-11-03 18:10:07,256 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-03 18:10:07,257 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-03 18:10:07,263 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-03 18:10:07,263 - INFO - Impressão concluída: 1 etiquetas do código 030000030
+2025-11-03 18:10:07,264 - INFO - Dados retornados pela API: {'cargo': {'id': 55, 'code': '030000030', 'status': 'STORED', 'customer': 'Thiago Cruz', 'stored_at': '2025-11-03 18:10:07'}, 'location': {'warehouse_id': 2, 'area_id': 2, 'address': None, 'type': 'RECEIVING'}, 'action': 'accept', 'received_by': 'Super User', 'received_at': '03/11/2025 18:10:07'}
+2025-11-03 18:10:07,264 - INFO - Status da carga retornado pela API: STORED
+2025-11-03 18:14:40,825 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:14:43,558 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=040000029&per_page=1 HTTP/1.1" 200 None
+2025-11-03 18:14:43,566 - INFO - Carga 040000029 encontrada
+2025-11-03 18:14:50,422 - INFO - Enviando para API - Cargo ID: 54
+2025-11-03 18:14:50,423 - INFO - Payload: {'warehouse_id': 2, 'action': 'accept', 'area_id': 2, 'area_type': 'RECEIVING'}
+2025-11-03 18:14:50,424 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:14:53,200 - DEBUG - http://localhost:8000 "POST /api/cargos/54/receive-physically HTTP/1.1" 200 None
+2025-11-03 18:14:53,207 - INFO - Resposta da API - Status: 200
+2025-11-03 18:14:53,208 - INFO - Carga 040000029 processada: accept
+2025-11-03 18:14:53,209 - INFO - Gerando ZPL para código: 040000029
+2025-11-03 18:14:53,210 - INFO - Enviando para impressão: 1 etiqueta(s) do código 040000029
+2025-11-03 18:14:53,210 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-03 18:14:53,211 - INFO - Impressora: 135 - Zebra
+2025-11-03 18:14:53,229 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-03 18:14:53,231 - INFO - Impressão concluída: 1 etiquetas do código 040000029
+2025-11-03 18:14:53,231 - INFO - Dados retornados pela API: {'cargo': {'id': 54, 'code': '040000029', 'status': 'RECEIVED', 'customer': 'Thiago Cruz', 'stored_at': None}, 'location': {'warehouse_id': 2, 'area_id': 2, 'address': None, 'type': 'RECEIVING'}, 'action': 'accept', 'received_by': 'Super User', 'received_at': '03/11/2025 18:14:53'}
+2025-11-03 18:14:53,232 - INFO - Status da carga retornado pela API: RECEIVED
+2025-11-03 18:15:08,554 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:15:11,266 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=050000028&per_page=1 HTTP/1.1" 200 None
+2025-11-03 18:15:11,273 - INFO - Carga 050000028 encontrada
+2025-11-03 18:15:24,801 - INFO - Enviando para API - Cargo ID: 53
+2025-11-03 18:15:24,805 - INFO - Payload: {'warehouse_id': 2, 'action': 'accept_with_remarks', 'area_id': 2, 'area_type': 'RECEIVING', 'remarks': 'Teste de ressalva'}
+2025-11-03 18:15:24,820 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-03 18:15:27,743 - DEBUG - http://localhost:8000 "POST /api/cargos/53/receive-physically HTTP/1.1" 200 None
+2025-11-03 18:15:27,751 - INFO - Resposta da API - Status: 200
+2025-11-03 18:15:27,751 - INFO - Carga 050000028 processada: accept_with_remarks
+2025-11-03 18:15:27,752 - INFO - Gerando ZPL para código: 050000028
+2025-11-03 18:15:27,752 - INFO - Enviando para impressão: 1 etiqueta(s) do código 050000028
+2025-11-03 18:15:27,752 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-03 18:15:27,753 - INFO - Impressora: 135 - Zebra
+2025-11-03 18:15:27,765 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-03 18:15:27,766 - INFO - Impressão concluída: 1 etiquetas do código 050000028
+2025-11-03 18:15:27,766 - INFO - Dados retornados pela API: {'cargo': {'id': 53, 'code': '050000028', 'status': 'RECEIVED', 'customer': 'Thiago Cruz', 'stored_at': None}, 'location': {'warehouse_id': 2, 'area_id': 2, 'address': None, 'type': 'RECEIVING'}, 'action': 'accept_with_remarks', 'received_by': 'Super User', 'received_at': '03/11/2025 18:15:27', 'remarks': 'Teste de ressalva', 'has_issues': True}
+2025-11-03 18:15:27,767 - INFO - Status da carga retornado pela API: RECEIVED
+2025-11-05 14:34:23,012 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 14:34:29,230 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 14:34:32,754 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 14:34:32,758 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 14:37:14,553 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 14:37:14,554 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 14:37:14,555 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 14:37:14,556 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 14:37:58,422 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 14:38:01,277 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 14:38:01,282 - INFO - Cargo encontrado: código 040000026
+2025-11-05 14:38:01,287 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 14:38:13,425 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 14:38:13,432 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 14:38:13,432 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 14:38:13,434 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 14:38:13,435 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 14:38:13,435 - INFO - Impressora: 135 - Zebra
+2025-11-05 14:38:13,436 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 14:38:13,436 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 14:38:13,594 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 14:38:13,595 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 14:50:25,129 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 14:50:31,542 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 14:50:35,064 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 14:50:35,071 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 14:50:40,523 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 14:50:40,523 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 14:50:40,525 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 14:50:40,525 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 14:50:57,948 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 14:51:00,604 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 14:51:00,609 - INFO - Cargo encontrado: código 040000026
+2025-11-05 14:51:00,613 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 14:51:05,696 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 14:51:05,699 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 14:51:05,700 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 14:51:05,700 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 14:51:05,703 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 14:51:05,703 - INFO - Impressora: 135 - Zebra
+2025-11-05 14:51:05,704 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 14:51:05,704 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 14:51:05,711 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 14:51:05,712 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 14:52:36,021 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 14:52:36,025 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 14:52:36,025 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 14:52:36,026 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 14:52:36,028 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-05 14:52:36,029 - INFO - Impressora: 135 - Zebra
+2025-11-05 14:52:41,036 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-05 14:52:41,037 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-05 14:52:41,038 - ERROR - Erro na reimpressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-05 14:52:49,288 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 14:52:52,024 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 14:52:52,029 - INFO - Cargo encontrado: código 040000026
+2025-11-05 14:52:52,031 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 14:52:57,272 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 14:52:57,278 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 14:52:57,278 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 14:52:57,278 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 14:52:57,281 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-05 14:52:57,282 - INFO - Impressora: 135 - Zebra
+2025-11-05 14:52:57,297 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 14:52:57,298 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 14:53:59,949 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 14:53:59,960 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 14:53:59,960 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 14:53:59,961 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 14:53:59,963 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-05 14:53:59,964 - INFO - Impressora: 135 - Zebra
+2025-11-05 14:53:59,969 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 14:53:59,969 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 14:56:00,492 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 14:56:06,148 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 14:56:09,673 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 14:56:09,679 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 14:56:13,110 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 14:56:13,111 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 14:56:13,114 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 14:56:13,114 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 14:56:17,052 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 14:56:19,731 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 14:56:19,737 - INFO - Cargo encontrado: código 040000026
+2025-11-05 14:56:19,741 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 14:56:26,851 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 14:56:26,855 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 14:56:26,855 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 14:56:26,856 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 14:56:26,859 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 14:56:26,860 - INFO - Impressora: 135 - Zebra
+2025-11-05 14:56:26,860 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 14:56:26,860 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 14:56:27,075 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 14:56:27,077 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 14:57:24,662 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 14:57:24,673 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 14:57:24,673 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 14:57:24,674 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 14:57:24,676 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-05 14:57:24,676 - INFO - Impressora: 135 - Zebra
+2025-11-05 14:57:25,779 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 14:57:25,780 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:09:00,100 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:09:00,107 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:09:00,108 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:09:00,109 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:09:00,111 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-05 15:09:00,111 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:09:00,129 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:09:00,130 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:10:46,378 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:10:51,880 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:10:55,452 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:10:55,458 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:10:57,625 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:10:57,625 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:10:57,627 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:10:57,627 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:11:03,051 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:11:05,286 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:11:05,289 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:11:05,291 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:11:07,623 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:11:07,629 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:11:07,629 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:11:07,630 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:11:07,632 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:11:07,632 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:11:07,632 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:11:07,632 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:11:07,640 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:11:07,642 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:13:59,477 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-11-05 15:14:03,642 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:14:08,692 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:14:12,172 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:14:12,176 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:14:47,693 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-11-05 15:14:51,331 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:14:57,334 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:14:59,792 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:14:59,794 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:15:02,233 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:15:02,234 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:15:02,235 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:15:02,235 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:15:14,601 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:15:17,235 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:15:17,240 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:15:17,242 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:15:21,158 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:15:21,164 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:15:21,165 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:15:21,165 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:15:21,166 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:15:21,167 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:15:21,167 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:15:21,168 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:15:21,180 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:15:21,181 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:16:07,415 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:16:12,103 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:16:14,699 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:16:14,701 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:16:25,562 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:16:25,562 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:16:25,564 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:16:25,564 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:16:30,586 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:16:33,327 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:16:33,331 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:16:33,334 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:16:36,239 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:16:36,246 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:16:36,246 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:16:36,246 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:16:36,249 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:16:36,249 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:16:36,250 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:16:36,251 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:16:36,263 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:16:36,264 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:17:10,169 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:17:14,902 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:17:18,253 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:17:18,258 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:17:20,348 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:17:20,349 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:17:20,351 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:17:20,351 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:17:24,543 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:17:26,801 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:17:26,803 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:17:26,805 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:17:28,622 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:17:28,629 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:17:28,629 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:17:28,630 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:17:28,631 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:17:28,631 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:17:28,631 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:17:28,632 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:17:28,673 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:17:28,675 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:18:35,262 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:18:40,894 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:18:44,440 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:18:44,445 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:18:46,861 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:18:46,862 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:18:46,864 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:18:46,864 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:18:50,080 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:18:52,340 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:18:52,342 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:18:52,344 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:18:54,585 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:18:54,592 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:18:54,592 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:18:54,593 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:18:54,595 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:18:54,595 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:18:54,596 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:18:54,597 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:18:54,613 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:18:54,614 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:20:05,142 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:20:11,497 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:20:15,110 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:20:15,115 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:20:17,134 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:20:17,135 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:20:17,140 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:20:17,140 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:20:20,800 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:20:23,022 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:20:23,024 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:20:23,026 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:20:26,034 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:20:26,038 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:20:26,038 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:20:26,039 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:20:26,041 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:20:26,041 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:20:26,042 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:20:26,042 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:20:26,051 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:20:26,054 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:21:17,190 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:21:24,225 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:21:27,542 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:21:27,547 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:21:30,035 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:21:30,036 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:21:30,038 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:21:30,039 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:21:32,919 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:21:35,182 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:21:35,184 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:21:35,186 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:21:36,916 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:21:36,924 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:21:36,924 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:21:36,925 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:21:36,926 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:21:36,927 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:21:36,927 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:21:36,927 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:21:36,953 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:21:36,954 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:22:08,155 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:22:18,596 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:22:21,146 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:22:21,149 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:22:23,882 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:22:23,890 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:22:23,892 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:22:23,892 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:22:28,018 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:22:30,312 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:22:30,314 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:22:30,317 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:22:42,015 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:22:42,019 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:22:42,019 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:22:42,020 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:22:42,021 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:22:42,022 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:22:42,022 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:22:42,022 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:22:42,033 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:22:42,034 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:33:14,010 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:35:43,426 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:35:48,316 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:35:51,850 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:35:51,855 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:35:55,004 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:35:55,005 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:35:55,006 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:35:55,007 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:36:10,223 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:36:12,892 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:36:12,898 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:36:12,905 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:36:15,605 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:36:15,618 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:36:15,619 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:36:15,619 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:36:15,621 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:36:15,622 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:36:15,622 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:36:15,622 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:36:15,653 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:36:15,655 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:37:08,077 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:37:13,173 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:37:16,638 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:37:16,643 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:37:19,165 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:37:19,165 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:37:19,167 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:37:19,168 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:37:24,834 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:37:27,115 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:37:27,117 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:37:27,120 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:37:31,064 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:37:31,070 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:37:31,071 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:37:31,071 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:37:31,075 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:37:31,075 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:37:31,075 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:37:31,075 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:37:31,088 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:37:31,089 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:38:25,343 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:38:31,400 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:38:34,913 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:38:34,918 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:38:37,376 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:38:37,377 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:38:37,379 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:38:37,380 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:38:41,196 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:38:43,460 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:38:43,462 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:38:43,464 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:38:46,043 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:38:46,047 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:38:46,048 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:38:46,048 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:38:46,051 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:38:46,051 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:38:46,051 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:38:46,052 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:38:46,076 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:38:46,077 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:39:23,473 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:39:29,912 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:39:33,373 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:39:33,378 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:39:35,650 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:39:35,651 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:39:35,655 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:39:35,655 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:39:38,957 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:39:41,227 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:39:41,228 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:39:41,231 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:39:44,732 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:39:44,741 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:39:44,742 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:39:44,742 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:39:44,744 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:39:44,744 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:39:44,744 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:39:44,745 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:39:44,753 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:39:44,755 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:40:34,177 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:40:39,805 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:40:43,309 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:40:43,313 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:40:45,474 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:40:45,475 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:40:45,476 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:40:45,477 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:40:49,162 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:40:51,452 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:40:51,454 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:40:51,457 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:40:53,225 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:40:53,235 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:40:53,236 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:40:53,237 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:40:53,240 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:40:53,241 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:40:53,241 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:40:53,241 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:40:53,249 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:40:53,251 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:42:13,490 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-05 15:42:19,053 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:42:22,487 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-05 15:42:22,492 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-05 15:42:26,083 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:42:26,084 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-05 15:42:26,086 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-05 15:42:26,087 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-05 15:42:29,334 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:42:31,978 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-05 15:42:31,983 - INFO - Cargo encontrado: código 040000026
+2025-11-05 15:42:31,986 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-05 15:42:33,926 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:42:33,929 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:42:33,930 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:42:33,930 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:42:33,933 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-05 15:42:33,934 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:42:33,934 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-05 15:42:33,934 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-05 15:42:33,967 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:42:33,969 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:43:04,595 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-05 15:43:04,608 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-05 15:43:04,608 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:43:04,609 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:43:04,611 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-05 15:43:04,612 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:43:04,625 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:43:04,625 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-05 15:44:15,289 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:44:18,036 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000011 HTTP/1.1" 200 None
+2025-11-05 15:44:18,041 - INFO - Cargo encontrado: código 010000011
+2025-11-05 15:44:18,042 - INFO - Cargo encontrado para reimpressão: 010000011
+2025-11-05 15:44:24,071 - INFO - Iniciando reimpressão: 1x código 010000011
+2025-11-05 15:44:24,079 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=None
+2025-11-05 15:44:24,082 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:44:24,084 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:44:24,086 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-05 15:44:24,087 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:44:24,106 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:44:24,107 - INFO - Reimpressão concluída: 1 etiquetas do código 010000011
+2025-11-05 15:45:09,433 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-05 15:45:12,087 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-05 15:45:12,092 - INFO - Cargo encontrado: código 050000028
+2025-11-05 15:45:12,092 - INFO - Cargo encontrado para reimpressão: 050000028
+2025-11-05 15:45:15,399 - INFO - Iniciando reimpressão: 1x código 050000028
+2025-11-05 15:45:15,403 - INFO - Indicadores na reimpressão: priority=True, special_handling=False, expiration=2025-12-31
+2025-11-05 15:45:15,404 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-05 15:45:15,404 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-05 15:45:15,406 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-05 15:45:15,406 - INFO - Impressora: 135 - Zebra
+2025-11-05 15:45:15,416 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-05 15:45:15,417 - INFO - Reimpressão concluída: 1 etiquetas do código 050000028
+2025-11-06 10:35:59,995 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-06 10:36:54,765 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:36:59,733 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 404 None
+2025-11-06 10:36:59,759 - ERROR - Erro durante o login: Endpoint de login não encontrado
+2025-11-06 10:37:03,992 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:37:06,378 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 404 None
+2025-11-06 10:37:06,382 - ERROR - Erro durante o login: Endpoint de login não encontrado
+2025-11-06 10:37:17,547 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:37:19,932 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 404 None
+2025-11-06 10:37:19,937 - ERROR - Erro durante o login: Endpoint de login não encontrado
+2025-11-06 10:37:27,744 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:37:30,153 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 404 None
+2025-11-06 10:37:30,156 - ERROR - Erro durante o login: Endpoint de login não encontrado
+2025-11-06 10:38:08,649 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-06 10:38:13,678 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:38:16,151 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 404 None
+2025-11-06 10:38:16,166 - ERROR - Erro durante o login: Endpoint de login não encontrado
+2025-11-06 10:42:30,445 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-06 10:42:39,769 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:42:43,843 - ERROR - Erro durante o login: Erro de conexão - verifique a conectividade com a API
+2025-11-06 10:44:14,884 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:44:23,255 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-06 10:44:23,309 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-06 10:45:23,438 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:45:23,439 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-06 10:45:23,440 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-06 10:45:23,441 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:45:27,890 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:45:30,834 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-06 10:45:30,840 - INFO - Cargo encontrado: código 040000026
+2025-11-06 10:45:30,844 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-06 10:45:37,237 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:45:37,241 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:45:37,242 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:45:37,242 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:45:37,244 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-06 10:45:37,244 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:45:37,245 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-06 10:45:37,245 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-06 10:45:37,262 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 10:45:37,263 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 10:46:09,075 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:46:09,084 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:46:09,085 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:46:09,085 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:46:09,088 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-06 10:46:09,089 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:46:09,114 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 10:46:09,115 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 10:47:25,433 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:47:25,443 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:47:25,443 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:47:25,444 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:47:25,448 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-06 10:47:25,448 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:47:30,452 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-06 10:47:30,452 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-06 10:47:30,453 - ERROR - Erro na reimpressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-06 10:47:39,265 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:47:39,268 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:47:39,269 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:47:39,270 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:47:39,273 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-06 10:47:39,274 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:47:42,310 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 10:47:42,312 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 10:48:06,587 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:48:06,588 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:48:06,589 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:48:06,589 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:48:06,591 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-06 10:48:06,592 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:48:06,606 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 10:48:06,607 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 10:48:20,283 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:48:22,957 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-06 10:48:22,963 - INFO - Cargo encontrado: código 040000026
+2025-11-06 10:48:22,964 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-06 10:48:26,377 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:48:26,380 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:48:26,380 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:48:26,380 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:48:26,381 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-06 10:48:26,382 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:48:26,397 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 10:48:26,398 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 10:52:10,279 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-06 10:52:15,940 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:52:19,604 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-06 10:52:19,624 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-06 10:52:23,144 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:52:23,145 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-06 10:52:23,147 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-06 10:52:23,148 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:52:26,729 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:52:29,388 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-06 10:52:29,392 - INFO - Cargo encontrado: código 040000026
+2025-11-06 10:52:29,395 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-06 10:52:34,887 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:52:34,889 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:52:34,889 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:52:34,890 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:52:34,891 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-06 10:52:34,891 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:52:34,891 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-06 10:52:34,891 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-06 10:52:34,904 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 10:52:34,905 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 10:52:42,369 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:52:42,371 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:52:42,372 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:52:42,372 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:52:42,374 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-06 10:52:42,375 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:52:42,386 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 10:52:42,387 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 10:54:19,852 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-06 10:54:24,662 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:54:28,237 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-06 10:54:28,243 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-06 10:54:31,602 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:54:31,603 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-06 10:54:31,604 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-06 10:54:31,605 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:54:34,788 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:54:37,447 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-06 10:54:37,451 - INFO - Cargo encontrado: código 040000026
+2025-11-06 10:54:37,454 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-06 10:54:40,425 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:54:40,428 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:54:40,428 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:54:40,429 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:54:40,430 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-06 10:54:40,430 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:54:40,431 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-06 10:54:40,431 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-06 10:54:40,448 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 10:54:40,449 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 10:55:44,766 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-06 10:55:49,515 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:55:52,982 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-06 10:55:52,986 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-06 10:55:55,435 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:55:55,436 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-06 10:55:55,438 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-06 10:55:55,439 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:55:58,224 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:56:00,885 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-06 10:56:00,889 - INFO - Cargo encontrado: código 040000026
+2025-11-06 10:56:00,891 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-06 10:56:05,892 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:56:05,895 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:56:05,896 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:56:05,896 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:56:05,898 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-06 10:56:05,898 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:56:05,899 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-06 10:56:05,900 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-06 10:56:05,916 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 10:56:05,917 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 10:57:38,847 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-06 10:57:46,046 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:57:49,620 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-06 10:57:49,625 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-06 10:57:53,745 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:57:53,745 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-06 10:57:53,747 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-06 10:57:53,748 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:57:58,446 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:58:01,109 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-06 10:58:01,113 - INFO - Cargo encontrado: código 040000026
+2025-11-06 10:58:01,115 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-06 10:58:04,330 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:58:04,332 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:58:04,333 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:58:04,333 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:58:04,340 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-06 10:58:04,340 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:58:04,340 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-06 10:58:04,341 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-06 10:58:04,350 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 10:58:04,351 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 10:58:59,561 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-06 10:59:05,544 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:59:09,029 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-06 10:59:09,033 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-06 10:59:13,314 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:59:13,315 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-06 10:59:13,318 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-06 10:59:13,319 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 10:59:15,989 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 10:59:18,681 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-06 10:59:18,686 - INFO - Cargo encontrado: código 040000026
+2025-11-06 10:59:18,689 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-06 10:59:21,426 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 10:59:21,428 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 10:59:21,429 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 10:59:21,429 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 10:59:21,430 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-06 10:59:21,430 - INFO - Impressora: 135 - Zebra
+2025-11-06 10:59:21,432 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-06 10:59:21,432 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-06 10:59:21,460 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 10:59:21,461 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 11:00:43,293 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-06 11:00:48,470 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:00:51,973 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-06 11:00:51,978 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-06 11:00:58,880 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 11:00:58,881 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou reimpressão
+2025-11-06 11:00:58,882 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-06 11:00:58,882 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 11:01:03,768 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:01:06,460 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000026 HTTP/1.1" 200 None
+2025-11-06 11:01:06,466 - INFO - Cargo encontrado: código 040000026
+2025-11-06 11:01:06,469 - INFO - Cargo encontrado para reimpressão: 040000026
+2025-11-06 11:01:09,652 - INFO - Iniciando reimpressão: 1x código 040000026
+2025-11-06 11:01:09,655 - INFO - Indicadores na reimpressão: priority=True, special_handling=True, expiration=2026-06-30
+2025-11-06 11:01:09,655 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 11:01:09,656 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 11:01:09,657 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-06 11:01:09,658 - INFO - Impressora: 135 - Zebra
+2025-11-06 11:01:09,658 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-06 11:01:09,658 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-06 11:01:09,664 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 11:01:09,664 - INFO - Reimpressão concluída: 1 etiquetas do código 040000026
+2025-11-06 11:01:44,567 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou impressão em lote
+2025-11-06 11:01:44,569 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-06 11:01:44,570 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 11:01:44,677 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:01:47,256 - DEBUG - http://localhost:8000 "GET /api/labels?user_id=1 HTTP/1.1" 200 None
+2025-11-06 11:01:47,260 - INFO - Listadas 1 labels da API
+2025-11-06 11:02:00,769 - INFO - Imprimindo sequência 00000079 até 00000080
+2025-11-06 11:02:00,773 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:02:03,406 - DEBUG - http://localhost:8000 "PUT /api/labels/1 HTTP/1.1" 200 None
+2025-11-06 11:02:03,410 - INFO - Label 1: last_number atualizado para 80
+2025-11-06 11:02:03,416 - INFO - Display selecionado: '\u2b50 135 - Zebra (network)'
+2025-11-06 11:02:03,417 - INFO - Impressoras configuradas: ['Zebra ADM 135 (network)', '\u2b50 135 - Zebra (network)', '\U0001f4be Salvar como arquivo ZPL']
+2025-11-06 11:02:03,418 - INFO - Enviando job de impressão: 2 etiqueta(s) via configured
+2025-11-06 11:02:03,418 - INFO - Impressora: 135 - Zebra
+2025-11-06 11:02:03,418 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-06 11:02:03,419 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-06 11:02:03,459 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 11:02:03,461 - INFO - Impressão concluída: 2 etiquetas da label teste1
+2025-11-06 11:02:34,287 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-06 11:02:34,289 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-06 11:02:34,290 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 11:02:34,304 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:02:36,914 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-06 11:02:36,921 - INFO - Carregados 2 galpões
+2025-11-06 11:02:36,974 - INFO - Tentando carregar impressoras: 2 encontradas
+2025-11-06 11:02:36,975 - INFO - Impressora adicionada: Zebra ADM 135 (network)
+2025-11-06 11:02:36,975 - INFO - Impressora adicionada: \u2b50 135 - Zebra (network)
+2025-11-06 11:02:36,980 - INFO - Carregadas 2 impressoras configuradas
+2025-11-06 11:02:40,728 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:02:43,317 - DEBUG - http://localhost:8000 "GET /api/warehouses/2/areas HTTP/1.1" 200 None
+2025-11-06 11:02:43,322 - INFO - Carregadas 5 áreas
+2025-11-06 11:02:57,226 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:03:01,597 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=050000025&per_page=1 HTTP/1.1" 200 None
+2025-11-06 11:03:01,604 - INFO - Carga 050000025 encontrada
+2025-11-06 11:03:16,331 - INFO - Enviando para API - Cargo ID: 50
+2025-11-06 11:03:16,331 - INFO - Payload: {'warehouse_id': 2, 'action': 'accept', 'area_id': 2, 'area_type': 'RECEIVING'}
+2025-11-06 11:03:16,332 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:03:19,220 - DEBUG - http://localhost:8000 "POST /api/cargos/50/receive-physically HTTP/1.1" 200 None
+2025-11-06 11:03:19,224 - INFO - Resposta da API - Status: 200
+2025-11-06 11:03:19,224 - INFO - Carga 050000025 processada: accept
+2025-11-06 11:03:19,224 - INFO - Gerando ZPL para código: 050000025
+2025-11-06 11:03:19,225 - INFO - Indicadores especiais: priority=False, special_handling=False, expiration=None
+2025-11-06 11:03:19,226 - INFO - Enviando para impressão: 1 etiqueta(s) do código 050000025
+2025-11-06 11:03:19,227 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-06 11:03:19,228 - INFO - Impressora: 135 - Zebra
+2025-11-06 11:03:19,228 - INFO - Impressora alterada para: 135 - Zebra
+2025-11-06 11:03:19,229 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-06 11:03:19,238 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 11:03:19,240 - INFO - Impressão concluída: 1 etiquetas do código 050000025
+2025-11-06 11:03:19,240 - INFO - Dados retornados pela API: {'cargo': {'id': 50, 'code': '050000025', 'status': 'RECEIVED', 'customer': 'Thiago Cruz', 'stored_at': None}, 'location': {'warehouse_id': 2, 'area_id': 2, 'address': None, 'type': 'RECEIVING'}, 'action': 'accept', 'received_by': 'Super User', 'received_at': '06/11/2025 11:03:19'}
+2025-11-06 11:03:19,241 - INFO - Status da carga retornado pela API: RECEIVED
+2025-11-06 11:03:44,688 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:03:47,355 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=020000019&per_page=1 HTTP/1.1" 200 None
+2025-11-06 11:03:47,362 - INFO - Carga 020000019 encontrada
+2025-11-06 11:03:53,455 - INFO - Enviando para API - Cargo ID: 44
+2025-11-06 11:03:53,455 - INFO - Payload: {'warehouse_id': 2, 'action': 'accept', 'area_id': 2, 'area_type': 'RECEIVING'}
+2025-11-06 11:03:53,457 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:03:56,115 - DEBUG - http://localhost:8000 "POST /api/cargos/44/receive-physically HTTP/1.1" 200 None
+2025-11-06 11:03:56,119 - INFO - Resposta da API - Status: 200
+2025-11-06 11:03:56,120 - INFO - Carga 020000019 processada: accept
+2025-11-06 11:03:56,120 - INFO - Gerando ZPL para código: 020000019
+2025-11-06 11:03:56,120 - INFO - Indicadores especiais: priority=False, special_handling=False, expiration=None
+2025-11-06 11:03:56,121 - INFO - Enviando para impressão: 1 etiqueta(s) do código 020000019
+2025-11-06 11:03:56,121 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-06 11:03:56,122 - INFO - Impressora: 135 - Zebra
+2025-11-06 11:03:56,163 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 11:03:56,164 - INFO - Impressão concluída: 1 etiquetas do código 020000019
+2025-11-06 11:03:56,166 - INFO - Dados retornados pela API: {'cargo': {'id': 44, 'code': '020000019', 'status': 'RECEIVED', 'customer': 'Thiago Cruz', 'stored_at': None}, 'location': {'warehouse_id': 2, 'area_id': 2, 'address': None, 'type': 'RECEIVING'}, 'action': 'accept', 'received_by': 'Super User', 'received_at': '06/11/2025 11:03:56'}
+2025-11-06 11:03:56,166 - INFO - Status da carga retornado pela API: RECEIVED
+2025-11-06 11:12:12,939 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:12:15,755 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=080000017&per_page=1 HTTP/1.1" 200 None
+2025-11-06 11:12:15,762 - INFO - Carga 080000017 encontrada
+2025-11-06 11:12:31,737 - INFO - Enviando para API - Cargo ID: 42
+2025-11-06 11:12:31,737 - INFO - Payload: {'warehouse_id': 2, 'action': 'accept', 'area_id': 2, 'area_type': 'RECEIVING'}
+2025-11-06 11:12:31,739 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 11:12:34,442 - DEBUG - http://localhost:8000 "POST /api/cargos/42/receive-physically HTTP/1.1" 200 None
+2025-11-06 11:12:34,447 - INFO - Resposta da API - Status: 200
+2025-11-06 11:12:34,447 - INFO - Carga 080000017 processada: accept
+2025-11-06 11:12:34,447 - INFO - Gerando ZPL para código: 080000017
+2025-11-06 11:12:34,448 - INFO - Indicadores especiais: priority=True, special_handling=True, expiration=None
+2025-11-06 11:12:34,448 - INFO - Enviando para impressão: 1 etiqueta(s) do código 080000017
+2025-11-06 11:12:34,449 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-06 11:12:34,449 - INFO - Impressora: 135 - Zebra
+2025-11-06 11:12:34,489 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-06 11:12:34,490 - INFO - Impressão concluída: 1 etiquetas do código 080000017
+2025-11-06 11:12:34,490 - INFO - Dados retornados pela API: {'cargo': {'id': 42, 'code': '080000017', 'status': 'RECEIVED', 'customer': 'Thiago Cruz', 'stored_at': None}, 'location': {'warehouse_id': 2, 'area_id': 2, 'address': None, 'type': 'RECEIVING'}, 'action': 'accept', 'received_by': 'Super User', 'received_at': '06/11/2025 11:12:34'}
+2025-11-06 11:12:34,491 - INFO - Status da carga retornado pela API: RECEIVED
+2025-11-06 11:13:30,505 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-11-06 15:53:18,329 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-06 15:53:28,965 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 15:53:31,445 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-06 15:53:31,447 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-06 15:53:36,957 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 15:53:36,958 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-06 15:53:36,959 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-06 15:53:36,960 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-06 15:53:36,969 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 15:53:39,189 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-06 15:53:39,191 - INFO - Carregados 2 galpões
+2025-11-06 15:53:39,267 - INFO - Tentando carregar impressoras: 2 encontradas
+2025-11-06 15:53:39,268 - INFO - Impressora adicionada: Zebra ADM 135 (network)
+2025-11-06 15:53:39,268 - INFO - Impressora adicionada: \u2b50 135 - Zebra (network)
+2025-11-06 15:53:39,271 - INFO - Carregadas 2 impressoras configuradas
+2025-11-06 15:53:41,627 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-06 15:53:43,874 - DEBUG - http://localhost:8000 "GET /api/warehouses/1/areas HTTP/1.1" 200 None
+2025-11-06 15:53:43,876 - INFO - Carregadas 1 áreas

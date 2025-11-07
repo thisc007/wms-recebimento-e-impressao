@@ -354,11 +354,24 @@ class ReprintWindow:
             
             log_info(f"Iniciando reimpressão: {quantity}x código {code_to_print}")
             
-            # Gerar ZPL
+            # Gerar ZPL com indicadores especiais
             self.status_label.config(text="Gerando código ZPL...", foreground='blue')
             self.root.update()
             
-            zpl = self.zpl_generator.build_zpl(code_to_print)
+            # Preparar dados da carga para indicadores especiais
+            cargo_data = None
+            if self.current_cargo:
+                cargo_data = {
+                    'is_priority': self.current_cargo.get('is_priority', False),
+                    'requires_special_handling': self.current_cargo.get('requires_special_handling', False),
+                    'expiration_date': self.current_cargo.get('expiration_date'),
+                    'handling_instructions': self.current_cargo.get('handling_instructions')
+                }
+                log_info(f"Indicadores na reimpressão: priority={cargo_data['is_priority']}, "
+                        f"special_handling={cargo_data['requires_special_handling']}, "
+                        f"expiration={cargo_data['expiration_date']}")
+            
+            zpl = self.zpl_generator.build_zpl(code_to_print, cargo_data)
             
             # Se múltiplas etiquetas, repetir o ZPL
             if quantity > 1:

@@ -340,7 +340,9 @@ class MainWindow:
                                          command=self.open_receive_load,
                                          style='Compact.TButton')
         receive_load_button.pack(pady=8, fill=tk.X)
-        
+         # Separador
+        separator = ttk.Separator(buttons_frame, orient='horizontal')
+        separator.pack(fill=tk.X, pady=12)  # Reduzido de 20 para 12
         # Botão de configuração de impressoras
         printer_config_button = ttk.Button(buttons_frame, 
                                           text="⚙️ Configurar Impressoras",
@@ -348,15 +350,9 @@ class MainWindow:
                                           style='Compact.TButton')
         printer_config_button.pack(pady=8, fill=tk.X)
         
-        # Separador
-        separator = ttk.Separator(buttons_frame, orient='horizontal')
-        separator.pack(fill=tk.X, pady=12)  # Reduzido de 20 para 12
+       
         
-        label_printer_button = ttk.Button(buttons_frame, 
-                                           text="🖨️ Configuração de Etiquetadora",
-                                           command=self.open_label_printer_settings,
-                                           style='Compact.TButton')
-        label_printer_button.pack(pady=8, fill=tk.X)
+       
 
         separator2 = ttk.Separator(buttons_frame, orient='horizontal')
         separator2.pack(fill=tk.X, pady=12)
@@ -603,9 +599,66 @@ class MainWindow:
         
     def open_receive_load(self):
         """Abre a janela de recebimento de carga"""
-        messagebox.showinfo("Em Desenvolvimento", 
-                           "Funcionalidade de recebimento de carga será implementada em breve.")
-        log_info(f"Usuário {self.user_data.get('name', 'N/A')} (CPF: {format_cpf(self.cpf)}) acessou recebimento de carga")
+        receive_window = None
+        window_closed = False
+        
+        def on_window_close():
+            nonlocal window_closed
+            window_closed = True
+            print("DEBUG: Callback de fechamento (receive_load) executado")
+            if receive_window and receive_window.root.winfo_exists():
+                receive_window.root.destroy()
+        
+        try:
+            from ui.receive_load_window import ReceiveLoadWindow
+            
+            log_info(f"Usuário {self.user_data.get('name', 'N/A')} (CPF: {format_cpf(self.cpf)}) acessou recebimento de carga")
+            
+            # Desabilitar botões da janela principal
+            print("DEBUG: Desabilitando janela principal (receive_load)...")
+            self.disable_main_window()
+            print("DEBUG: Janela principal desabilitada (receive_load).")
+            
+            # Abrir janela de recebimento
+            receive_window = ReceiveLoadWindow(self.cpf, self.token, self.user_data)
+            
+            # Configurar callback personalizado de fechamento
+            receive_window.root.protocol("WM_DELETE_WINDOW", on_window_close)
+            
+            # Executar janela modal
+            receive_window.root.grab_set()
+            
+            # Aguardar fechamento da janela
+            print("DEBUG: Aguardando fechamento da janela modal (receive_load)...")
+            
+            # Loop de espera
+            while not window_closed:
+                try:
+                    self.root.update()
+                    if not receive_window.root.winfo_exists():
+                        window_closed = True
+                        break
+                except:
+                    window_closed = True
+                    break
+            
+            print("DEBUG: Janela modal (receive_load) foi fechada.")
+            
+        except Exception as e:
+            log_error(f"Erro ao abrir recebimento de carga: {str(e)}")
+            messagebox.showerror("Erro", f"Erro ao abrir recebimento de carga:\n{str(e)}")
+        finally:
+            # Sempre reabilitar janela principal
+            print("DEBUG: Executando finally (receive_load) - reabilitando janela principal...")
+            try:
+                if receive_window and receive_window.root.winfo_exists():
+                    receive_window.root.destroy()
+            except:
+                pass
+            self.enable_main_window()
+            self.root.lift()
+            self.root.focus_force()
+            print("DEBUG: Janela principal reabilitada (receive_load).")
         
     def open_label_printer_settings(self):
         """Abre a janela de configuração da etiquetadora"""
