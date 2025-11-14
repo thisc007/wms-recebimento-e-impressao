@@ -2653,3 +2653,1371 @@
 2025-11-06 15:53:41,627 - DEBUG - Starting new HTTP connection (1): localhost:8000
 2025-11-06 15:53:43,874 - DEBUG - http://localhost:8000 "GET /api/warehouses/1/areas HTTP/1.1" 200 None
 2025-11-06 15:53:43,876 - INFO - Carregadas 1 áreas
+2025-11-11 18:30:09,492 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-11 18:30:19,124 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-11 18:30:21,555 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-11 18:30:21,557 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-11 18:31:53,523 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-11 18:31:58,987 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-11 18:32:01,468 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-11 18:32:01,470 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-11 18:35:04,694 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-11 18:35:11,052 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-11 18:35:13,568 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-11 18:35:13,571 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-11 18:35:14,006 - ERROR - Erro durante o login: 'MainWindow' object has no attribute 'open_consolidators'
+2025-11-11 18:40:19,385 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-11 18:40:26,667 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-11 18:40:29,143 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-11 18:40:29,145 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-11 18:40:35,350 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-11 18:40:35,351 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-11 18:40:35,352 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-11 18:40:35,353 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-11 18:40:35,434 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-11 18:40:37,672 - DEBUG - http://localhost:8000 "GET /api/consolidators HTTP/1.1" 200 None
+2025-11-11 18:41:51,028 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou recebimento de carga
+2025-11-11 18:41:51,030 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-11 18:41:51,031 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-11 18:41:51,042 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-11 18:41:53,284 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-11 18:41:53,286 - INFO - Carregados 2 galpões
+2025-11-11 18:41:53,329 - INFO - Tentando carregar impressoras: 2 encontradas
+2025-11-11 18:41:53,330 - INFO - Impressora adicionada: Zebra ADM 135 (network)
+2025-11-11 18:41:53,330 - INFO - Impressora adicionada: \u2b50 135 - Zebra (network)
+2025-11-11 18:41:53,334 - INFO - Carregadas 2 impressoras configuradas
+2025-11-11 18:44:56,522 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-11 18:45:03,502 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-11 18:45:06,011 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-11 18:45:06,013 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-11 18:45:10,157 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-11 18:45:10,157 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-11 18:45:10,159 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-11 18:45:10,160 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-11 18:45:10,199 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-11 18:45:12,438 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-11 18:45:12,440 - INFO - Carregados 2 galpões para consolidação
+2025-11-11 18:45:12,485 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-11 18:45:14,714 - DEBUG - http://localhost:8000 "GET /api/consolidators HTTP/1.1" 200 None
+2025-11-12 11:17:37,237 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 11:17:43,570 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 11:17:47,647 - ERROR - Erro durante o login: Erro de conexão - verifique a conectividade com a API
+2025-11-12 11:19:01,914 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 11:19:06,503 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 11:19:06,505 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 11:19:26,972 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 11:19:26,973 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 11:19:26,975 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 11:19:26,975 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 11:19:27,018 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 11:19:29,664 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 11:19:29,667 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 11:19:29,712 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 11:19:32,002 - DEBUG - http://localhost:8000 "GET /api/consolidators HTTP/1.1" 200 None
+2025-11-12 11:19:48,263 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 11:19:50,460 - DEBUG - http://localhost:8000 "GET /api/consolidators?warehouse_id=2 HTTP/1.1" 200 None
+2025-11-12 11:51:27,929 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 11:51:34,095 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 11:51:36,600 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 11:51:36,602 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 11:51:44,610 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 11:51:44,610 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 11:51:44,612 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 11:51:44,612 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 11:51:44,656 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 11:51:46,882 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 11:51:46,884 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 11:54:48,918 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 11:54:54,543 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 11:54:57,005 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 11:54:57,007 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 11:55:23,465 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 11:55:23,465 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 11:55:23,468 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 11:55:23,468 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 11:55:23,510 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 11:55:25,739 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 11:55:25,741 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 14:37:24,665 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:37:26,903 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:37:26,906 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:37:29,107 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=050000028&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:37:29,109 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:37:31,324 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=040000029&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:37:31,327 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:37:33,544 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=030000030&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:37:33,549 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:37:35,763 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:37:35,765 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:37:37,975 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=050000028&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:37:37,977 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:37:40,233 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=040000029&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:37:40,236 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:37:42,424 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=030000030&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:55:53,649 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:55:55,868 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:55:55,870 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:55:58,065 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=050000028&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:55:58,067 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:56:00,228 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=040000029&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:56:00,230 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:56:02,422 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=030000030&per_page=1 HTTP/1.1" 401 None
+2025-11-12 14:57:44,688 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-11-12 14:57:51,413 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:57:53,860 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 14:57:53,862 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 14:57:55,335 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 14:57:55,338 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 14:57:55,339 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 14:57:55,341 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:57:57,579 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 14:57:57,581 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 14:59:13,037 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:59:15,252 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-12 14:59:15,255 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:59:17,475 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=030000030&per_page=1 HTTP/1.1" 200 None
+2025-11-12 14:59:17,477 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:59:19,706 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=040000029&per_page=1 HTTP/1.1" 200 None
+2025-11-12 14:59:19,709 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 14:59:22,007 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=050000028&per_page=1 HTTP/1.1" 200 None
+2025-11-12 15:25:26,508 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-11-12 15:46:21,444 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 15:46:28,581 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 15:46:32,242 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 15:46:32,247 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 15:47:25,954 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 15:47:25,955 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 15:47:25,956 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 15:47:25,957 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 15:47:26,013 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 15:47:28,698 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 15:47:28,703 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 15:51:40,192 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 15:51:45,597 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 15:51:49,674 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 15:51:49,681 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 15:51:56,376 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 15:51:56,377 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 15:51:56,380 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 15:51:56,381 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 15:51:56,448 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 15:51:59,120 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 15:51:59,125 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 15:59:23,907 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 15:59:23,910 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 15:59:23,910 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 15:59:23,949 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 15:59:26,778 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 15:59:26,784 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 16:00:14,543 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:00:17,313 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-12 16:00:17,320 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:00:20,016 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=030000030&per_page=1 HTTP/1.1" 200 None
+2025-11-12 16:00:20,024 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:00:22,743 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=040000029&per_page=1 HTTP/1.1" 200 None
+2025-11-12 16:00:22,750 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:00:25,452 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=050000028&per_page=1 HTTP/1.1" 200 None
+2025-11-12 16:02:21,980 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 16:02:28,051 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:02:31,644 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 16:02:31,652 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 16:02:37,909 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:02:37,910 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 16:02:37,913 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 16:02:37,914 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:02:37,915 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:02:40,663 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 16:02:40,670 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 16:03:28,325 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:03:31,118 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=010000031&per_page=1 HTTP/1.1" 200 None
+2025-11-12 16:03:31,126 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:03:33,839 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=030000030&per_page=1 HTTP/1.1" 200 None
+2025-11-12 16:03:33,848 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:03:36,564 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=040000029&per_page=1 HTTP/1.1" 200 None
+2025-11-12 16:03:36,571 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:03:39,288 - DEBUG - http://localhost:8000 "GET /api/cargos/pending-physical-receipt?code=050000028&per_page=1 HTTP/1.1" 200 None
+2025-11-12 16:08:29,584 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 16:08:35,643 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:08:39,558 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 422 None
+2025-11-12 16:08:39,565 - ERROR - Erro durante o login: Login failed: 422 - {"message":"Login ou Senha inv\u00e1lida."}
+2025-11-12 16:08:41,262 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:08:44,914 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 16:08:44,921 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 16:17:31,389 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou configuração de impressoras
+2025-11-12 16:17:31,395 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:17:31,396 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:17:33,143 - INFO - Fechando janela de configuração de impressoras
+2025-11-12 16:17:33,200 - INFO - Configuração de impressoras fechada
+2025-11-12 16:17:35,058 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 16:17:35,062 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 16:17:35,062 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:17:35,064 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:17:37,981 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 16:17:37,988 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 16:17:58,779 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 16:18:06,964 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:18:10,501 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 16:18:10,507 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 16:18:15,791 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:18:15,792 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 16:18:15,796 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 16:18:15,797 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:18:15,799 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:18:18,510 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 16:18:18,515 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 16:18:59,156 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:19:02,001 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 16:19:02,007 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 16:19:02,008 - INFO -   \u2717 Carga 010000031 com status inválido: RECEIVED
+2025-11-12 16:19:02,010 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:19:04,724 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 16:19:04,729 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 16:19:04,730 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 16:19:04,731 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:19:07,441 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 16:19:07,446 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 16:19:07,447 - INFO -   \u2717 Carga 040000029 com status inválido: RECEIVED
+2025-11-12 16:19:07,448 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:19:10,126 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 16:19:10,131 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 16:19:10,132 - INFO -   \u2717 Carga 050000028 com status inválido: RECEIVED
+2025-11-12 16:20:58,282 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 16:21:03,575 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:21:07,220 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 16:21:07,225 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 16:21:12,222 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:21:12,222 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 16:21:12,225 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 16:21:12,226 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:21:12,227 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:21:14,911 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 16:21:14,918 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 16:21:32,092 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:21:34,769 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 16:21:34,775 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 16:21:34,776 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-12 16:21:34,778 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:21:37,440 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 16:21:37,445 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 16:21:37,446 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 16:21:37,447 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:21:40,148 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 16:21:40,154 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 16:21:40,154 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-12 16:21:40,156 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:21:42,835 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 16:21:42,841 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 16:21:42,841 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-12 16:21:42,842 - INFO - Criando consolidador: 3 cargas no galpão 2
+2025-11-12 16:21:42,843 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:21:45,543 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 500 None
+2025-11-12 16:21:45,549 - ERROR - Erro ao processar resposta da API: Resposta inesperada da API
+2025-11-12 16:32:05,466 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:32:08,281 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 16:32:08,287 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 16:32:08,287 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-12 16:32:08,289 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:32:10,970 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 16:32:10,975 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 16:32:10,976 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 16:32:10,978 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:32:13,688 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 16:32:13,693 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 16:32:13,694 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-12 16:32:13,697 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:32:16,081 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 16:32:16,084 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 16:32:16,085 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-12 16:32:16,086 - INFO - Criando consolidador: 3 cargas no galpão 2
+2025-11-12 16:32:16,088 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:32:18,407 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 500 None
+2025-11-12 16:32:18,411 - ERROR - Erro ao processar resposta da API: Resposta inesperada da API
+2025-11-12 16:35:29,149 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 16:35:36,976 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:35:40,741 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 16:35:40,747 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 16:35:47,868 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:35:47,869 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 16:35:47,871 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 16:35:47,872 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:35:47,874 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:35:50,644 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 16:35:50,652 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 16:36:03,031 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:36:05,729 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 16:36:05,734 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 16:36:05,735 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-12 16:36:05,736 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:36:08,417 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 16:36:08,422 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 16:36:08,423 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 16:36:08,424 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:36:11,128 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 16:36:11,134 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 16:36:11,134 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-12 16:36:11,136 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:36:13,469 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 16:36:13,473 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 16:36:13,473 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-12 16:36:13,475 - INFO - Criando consolidador: 3 cargas no galpão 2
+2025-11-12 16:36:13,478 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:36:15,791 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 500 None
+2025-11-12 16:36:15,795 - ERROR - Erro ao criar consolidador - HTTP 500
+2025-11-12 16:36:15,796 - ERROR - Resposta completa: {
+    "message": "Database connection [wms] not configured.",
+    "exception": "InvalidArgumentException",
+    "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php",
+    "line": 221,
+    "trace": [
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php",
+            "line": 187,
+            "function": "configuration",
+            "class": "Illuminate\\Database\\DatabaseManager",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php",
+            "line": 102,
+            "function": "makeConnection",
+            "class": "Illuminate\\Database\\DatabaseManager",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\DatabasePresenceVerifier.php",
+            "line": 123,
+            "function": "connection",
+            "class": "Illuminate\\Database\\DatabaseManager",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\DatabasePresenceVerifier.php",
+            "line": 47,
+            "function": "table",
+            "class": "Illuminate\\Validation\\DatabasePresenceVerifier",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Concerns\\ValidatesAttributes.php",
+            "line": 1015,
+            "function": "getCount",
+            "class": "Illuminate\\Validation\\DatabasePresenceVerifier",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Concerns\\ValidatesAttributes.php",
+            "line": 986,
+            "function": "getExistCount",
+            "class": "Illuminate\\Validation\\Validator",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php",
+            "line": 685,
+            "function": "validateExists",
+            "class": "Illuminate\\Validation\\Validator",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php",
+            "line": 480,
+            "function": "validateAttribute",
+            "class": "Illuminate\\Validation\\Validator",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php",
+            "line": 515,
+            "function": "passes",
+            "class": "Illuminate\\Validation\\Validator",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\app\\Http\\Controllers\\Api\\ConsolidatorController.php",
+            "line": 104,
+            "function": "fails",
+            "class": "Illuminate\\Validation\\Validator",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php",
+            "line": 54,
+            "function": "store",
+            "class": "App\\Http\\Controllers\\Api\\ConsolidatorController",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php",
+            "line": 43,
+            "function": "callAction",
+            "class": "Illuminate\\Routing\\Controller",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+            "line": 265,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\ControllerDispatcher",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+            "line": 211,
+            "function": "runController",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 822,
+            "function": "run",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 180,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\app\\Http\\Middleware\\TrackUserActivity.php",
+            "line": 67,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "App\\Http\\Middleware\\TrackUserActivity",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php",
+            "line": 50,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php",
+            "line": 63,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Auth\\Middleware\\Authenticate",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 137,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 821,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 800,
+            "function": "runRouteWithinStack",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 764,
+            "function": "runRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 753,
+            "function": "dispatchToRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 200,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 180,
+            "function": "Illuminate\\Foundation\\Http\\{closure}",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+            "line": 21,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
+            "line": 31,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+            "line": 21,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
+            "line": 51,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php",
+            "line": 27,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\ValidatePostSize",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
+            "line": 109,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php",
+            "line": 61,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\HandleCors",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
+            "line": 58,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php",
+            "line": 22,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php",
+            "line": 26,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 219,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\ValidatePathEncoding",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 137,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 175,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 144,
+            "function": "sendRequestThroughRouter",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php",
+            "line": 1220,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\public\\index.php",
+            "line": 20,
+            "function": "handleRequest",
+            "class": "Illuminate\\Foundation\\Application",
+            "type": "->"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\WMS-millenium\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php",
+            "line": 23,
+            "function": "require_once"
+        }
+    ]
+}
+2025-11-12 16:38:18,101 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:38:21,014 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 16:38:21,020 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 16:38:21,021 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-12 16:38:21,023 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:38:23,811 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 16:38:23,817 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 16:38:23,817 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 16:38:23,818 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:38:26,718 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 16:38:26,728 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 16:38:26,728 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-12 16:38:26,730 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:38:29,035 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 16:38:29,037 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 16:38:29,038 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-12 16:38:29,040 - INFO - Criando consolidador: 3 cargas no galpão 2
+2025-11-12 16:38:29,042 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:38:31,352 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 422 None
+2025-11-12 16:38:31,354 - ERROR - Erro ao criar consolidador - HTTP 422
+2025-11-12 16:38:31,355 - ERROR - Resposta completa: {"success":false,"message":"Existem cargas que n\u00e3o podem ser consolidadas","errors":[{"cargo_id":54,"cargo_code":"040000029","error":"galpao_diferente","message":"A carga 040000029 pertence ao galp\u00e3o 'desconhecido'. Para consolidar no galp\u00e3o 'Cotia 1', fa\u00e7a a transfer\u00eancia da carga e use o menu 'Reconsolidar'.","cargo_warehouse":"desconhecido","target_warehouse":"Cotia 1"},{"cargo_id":53,"cargo_code":"050000028","error":"galpao_diferente","message":"A carga 050000028 pertence ao galp\u00e3o 'desconhecido'. Para consolidar no galp\u00e3o 'Cotia 1', fa\u00e7a a transfer\u00eancia da carga e use o menu 'Reconsolidar'.","cargo_warehouse":"desconhecido","target_warehouse":"Cotia 1"}]}
+2025-11-12 16:45:30,851 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 16:45:37,321 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:45:41,057 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 16:45:41,063 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 16:46:08,326 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:46:08,326 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 16:46:08,329 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 16:46:08,330 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:46:08,331 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:46:11,058 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 16:46:11,064 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 16:46:34,684 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:46:37,468 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 16:46:37,475 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 16:46:37,476 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-12 16:46:37,480 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:46:40,190 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 16:46:40,197 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 16:46:40,198 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 16:46:40,199 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:46:42,932 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 16:46:42,939 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 16:46:42,940 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-12 16:46:42,942 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:46:45,697 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 16:46:45,702 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 16:46:45,703 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-12 16:47:01,320 - INFO - Criando consolidador: 3 cargas no galpão 1
+2025-11-12 16:47:01,323 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:47:04,023 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 422 None
+2025-11-12 16:47:04,029 - ERROR - Erro ao criar consolidador - HTTP 422
+2025-11-12 16:47:04,029 - ERROR - Resposta completa: {"success":false,"message":"Existem cargas que n\u00e3o podem ser consolidadas","errors":[{"cargo_id":56,"cargo_code":"010000031","error":"galpao_diferente","message":"A carga 010000031 pertence ao galp\u00e3o 'desconhecido'. Para consolidar no galp\u00e3o 'Galp\u00e3o Osasco 1', fa\u00e7a a transfer\u00eancia da carga e use o menu 'Reconsolidar'.","cargo_warehouse":"desconhecido","target_warehouse":"Galp\u00e3o Osasco 1"}]}
+2025-11-12 16:54:23,088 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 16:54:23,092 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 16:54:23,093 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:54:23,095 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:54:25,997 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 16:54:26,003 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 16:54:44,310 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:54:47,069 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 16:54:47,076 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 16:54:47,076 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-12 16:54:47,078 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:54:50,126 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 16:54:50,132 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 16:54:50,133 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 16:54:50,134 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:54:52,951 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 16:54:52,957 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 16:54:52,958 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-12 16:54:52,960 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:54:55,669 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 16:54:55,677 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 16:54:55,678 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-12 16:54:58,049 - INFO - Criando consolidador: 3 cargas no galpão 1
+2025-11-12 16:54:58,051 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:55:00,915 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 500 None
+2025-11-12 16:55:00,923 - ERROR - Erro ao criar consolidador - HTTP 500
+2025-11-12 16:55:00,924 - ERROR - Resposta completa: {"success":false,"message":"Erro ao criar consolidador","error":"SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value (Connection: mysql, SQL: insert into `cargo_histories` (`cargo_id`, `action`, `description`, `performed_by`, `metadata`, `updated_at`, `created_at`) values (54, consolidated, Carga consolidada no consolidador 900001, 1, \"{\\\"consolidator_id\\\":2,\\\"consolidator_code\\\":\\\"900001\\\"}\", 2025-11-12 16:55:00, 2025-11-12 16:55:00))"}
+2025-11-12 16:57:08,941 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 16:57:13,688 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:57:17,456 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 16:57:17,464 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 16:57:23,329 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:57:23,329 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 16:57:23,331 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 16:57:23,332 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 16:57:23,334 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:57:26,077 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 16:57:26,083 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 16:57:43,256 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:57:45,983 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 16:57:45,988 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 16:57:45,989 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-12 16:57:45,991 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:57:48,683 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 16:57:48,688 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 16:57:48,688 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 16:57:48,690 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:57:51,408 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 16:57:51,414 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 16:57:51,415 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-12 16:57:51,417 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:57:54,363 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 16:57:54,368 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 16:57:54,369 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-12 16:57:58,140 - INFO - Criando consolidador: 3 cargas no galpão 1
+2025-11-12 16:57:58,142 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:58:00,919 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 500 None
+2025-11-12 16:58:00,927 - ERROR - Erro ao criar consolidador - HTTP 500
+2025-11-12 16:58:00,927 - ERROR - Resposta completa: {"success":false,"message":"Erro ao criar consolidador","error":"SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value (Connection: mysql, SQL: insert into `cargo_histories` (`cargo_id`, `action`, `description`, `performed_by`, `metadata`, `updated_at`, `created_at`) values (54, consolidated, Carga consolidada no consolidador 900001, 1, \"{\\\"consolidator_id\\\":3,\\\"consolidator_code\\\":\\\"900001\\\"}\", 2025-11-12 16:58:00, 2025-11-12 16:58:00))"}
+2025-11-12 16:59:43,991 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:59:46,856 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 16:59:46,863 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 16:59:46,863 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-12 16:59:46,865 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:59:50,000 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 16:59:50,043 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 16:59:50,050 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 16:59:50,052 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:59:52,821 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 16:59:52,826 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 16:59:52,827 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-12 16:59:52,829 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 16:59:55,576 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 16:59:55,582 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 16:59:55,583 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-12 16:59:56,996 - INFO - Criando consolidador: 3 cargas no galpão 1
+2025-11-12 16:59:56,998 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:00:00,039 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-12 17:00:00,064 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-12 17:00:00,065 - INFO - Impressora: 135 - Zebra
+2025-11-12 17:00:00,065 - INFO - Impressora alterada para: Zebra ADM 135
+2025-11-12 17:00:00,065 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-12 17:00:00,159 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-12 17:03:15,996 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:03:18,873 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 17:03:18,879 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 17:03:18,880 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-12 17:03:18,882 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:03:21,588 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 17:03:21,595 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 17:03:21,595 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 17:03:21,597 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:03:24,313 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 17:03:24,318 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 17:03:24,319 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-12 17:03:24,321 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:03:27,059 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 17:03:27,066 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 17:03:27,066 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-12 17:03:33,010 - INFO - Criando consolidador: 3 cargas no galpão 1
+2025-11-12 17:03:33,011 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:03:35,851 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-12 17:03:35,875 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-12 17:03:35,875 - INFO - Impressora: Zebra ADM 135
+2025-11-12 17:03:35,912 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-12 17:08:08,294 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:08:11,308 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 17:08:11,314 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 17:08:11,315 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-12 17:08:11,316 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:08:14,130 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 17:08:14,138 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 17:08:14,138 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 17:08:14,141 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:08:16,926 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 17:08:16,931 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 17:08:16,932 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-12 17:08:16,933 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:08:19,764 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 17:08:19,769 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 17:08:19,770 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-12 17:08:24,518 - INFO - Criando consolidador: 3 cargas no galpão 1
+2025-11-12 17:08:24,520 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:08:27,440 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-12 17:08:27,466 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-12 17:08:27,467 - INFO - Impressora: Zebra ADM 135
+2025-11-12 17:08:27,483 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-12 17:08:54,702 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-12 17:08:59,557 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:09:03,743 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-12 17:09:03,748 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-12 17:09:22,199 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 17:09:22,200 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-12 17:09:22,202 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-12 17:09:22,203 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-12 17:09:22,205 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:09:24,969 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-12 17:09:24,975 - INFO - Carregados 2 galpões para consolidação
+2025-11-12 17:10:08,101 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:10:10,951 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-12 17:10:10,957 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-12 17:10:10,957 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-12 17:10:10,959 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:10:13,891 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-12 17:10:13,898 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-12 17:10:13,899 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-12 17:10:13,901 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:10:16,702 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-12 17:10:16,708 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-12 17:10:16,709 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-12 17:10:16,710 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:10:19,525 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-12 17:10:19,530 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-12 17:10:19,531 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-12 17:10:21,849 - INFO - Criando consolidador: 3 cargas no galpão 1
+2025-11-12 17:10:21,851 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-12 17:10:24,608 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 422 None
+2025-11-12 17:10:24,613 - ERROR - Erro ao criar consolidador - HTTP 422
+2025-11-12 17:10:24,614 - ERROR - Resposta completa: {"success":false,"message":"Dados inv\u00e1lidos","errors":{"warehouse_id":["validation.exists"]}}
+2025-11-12 17:18:46,112 - INFO - Usuário Super User (CPF: 123.456.789-01) fez logout
+2025-11-13 11:53:48,603 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-13 11:53:55,534 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:53:59,206 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-13 11:53:59,210 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-13 11:54:48,194 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 11:54:48,195 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-13 11:54:48,197 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-13 11:54:48,197 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 11:54:48,199 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:54:50,757 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-13 11:54:50,761 - INFO - Carregados 1 galpões para consolidação
+2025-11-13 11:55:00,688 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:55:03,687 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 11:55:03,692 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 11:55:03,692 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 11:55:03,693 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:55:06,342 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 11:55:06,348 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 11:55:06,349 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 11:55:06,351 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:55:09,073 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 11:55:09,079 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 11:55:09,079 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 11:55:09,081 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:55:11,670 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 11:55:11,676 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 11:55:11,676 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 11:55:14,115 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 11:55:14,116 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:55:16,949 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-13 11:55:16,963 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-13 11:55:16,964 - INFO - Impressora: 135 - Zebra
+2025-11-13 11:55:16,964 - INFO - Impressora alterada para: Zebra ADM 135
+2025-11-13 11:55:16,964 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-13 11:55:16,981 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-13 11:57:37,273 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-13 11:57:42,613 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:57:46,128 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-13 11:57:46,134 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-13 11:57:50,032 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 11:57:50,033 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-13 11:57:50,035 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-13 11:57:50,036 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 11:57:50,037 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:57:52,645 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-13 11:57:52,649 - INFO - Carregados 1 galpões para consolidação
+2025-11-13 11:57:59,153 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:58:01,720 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 11:58:01,723 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 11:58:01,723 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 11:58:01,724 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:58:04,343 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 11:58:04,346 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 11:58:04,346 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 11:58:04,348 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:58:06,915 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 11:58:06,919 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 11:58:06,919 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 11:58:06,920 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:58:09,515 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 11:58:09,519 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 11:58:09,519 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 11:58:11,479 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 11:58:11,481 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 11:58:14,110 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-13 11:58:14,122 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-13 11:58:14,123 - INFO - Impressora: 135 - Zebra
+2025-11-13 11:58:14,123 - INFO - Impressora alterada para: Zebra ADM 135
+2025-11-13 11:58:14,123 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-13 11:58:14,212 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-13 12:02:11,479 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-13 12:02:32,693 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:02:36,433 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-13 12:02:36,438 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-13 12:02:44,554 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 12:02:44,554 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-13 12:02:44,557 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-13 12:02:44,558 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 12:02:44,560 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:02:47,164 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-13 12:02:47,169 - INFO - Carregados 1 galpões para consolidação
+2025-11-13 12:02:55,151 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:02:57,726 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 12:02:57,730 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 12:02:57,730 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 12:02:57,731 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:03:00,309 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 12:03:00,313 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 12:03:00,313 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 12:03:00,315 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:03:02,878 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 12:03:02,881 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 12:03:02,881 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 12:03:02,882 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:03:05,499 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 12:03:05,502 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 12:03:05,502 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 12:03:08,895 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 12:03:08,897 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:03:11,592 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-13 12:03:11,603 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-13 12:03:11,604 - INFO - Impressora: 135 - Zebra
+2025-11-13 12:03:11,604 - INFO - Impressora alterada para: Zebra ADM 135
+2025-11-13 12:03:11,605 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-13 12:03:11,619 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-13 12:04:55,941 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-13 12:05:11,475 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:05:14,988 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-13 12:05:14,994 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-13 12:05:51,196 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 12:05:51,196 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-13 12:05:51,199 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-13 12:05:51,199 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 12:05:51,201 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:05:53,797 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-13 12:05:53,801 - INFO - Carregados 1 galpões para consolidação
+2025-11-13 12:06:10,339 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:06:12,891 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 12:06:12,894 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 12:06:12,894 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 12:06:12,895 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:06:15,498 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 12:06:15,502 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 12:06:15,503 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 12:06:15,504 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:06:18,224 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 12:06:18,230 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 12:06:18,230 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 12:06:18,231 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:06:20,809 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 12:06:20,813 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 12:06:20,813 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 12:06:23,028 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 12:06:23,029 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:06:25,691 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-13 12:06:25,705 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-13 12:06:25,706 - INFO - Impressora: 135 - Zebra
+2025-11-13 12:06:25,706 - INFO - Impressora alterada para: Zebra ADM 135
+2025-11-13 12:06:25,706 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-13 12:06:25,725 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-13 12:15:59,884 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-13 12:16:06,109 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:16:09,711 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-13 12:16:09,716 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-13 12:16:14,109 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 12:16:14,111 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-13 12:16:14,134 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-13 12:16:14,135 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 12:16:14,136 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:16:16,745 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-13 12:16:16,748 - INFO - Carregados 1 galpões para consolidação
+2025-11-13 12:16:24,439 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:16:26,997 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 12:16:27,006 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 12:16:27,007 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 12:16:27,010 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:16:29,616 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 12:16:29,620 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 12:16:29,620 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 12:16:29,621 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:16:32,188 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 12:16:32,192 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 12:16:32,193 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 12:16:32,194 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:16:34,749 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 12:16:34,752 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 12:16:34,752 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 12:16:38,229 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 12:16:38,231 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:16:40,879 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-13 12:16:40,893 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-13 12:16:40,894 - INFO - Impressora: 135 - Zebra
+2025-11-13 12:16:40,894 - INFO - Impressora alterada para: Zebra ADM 135
+2025-11-13 12:16:40,896 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-13 12:16:40,909 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-13 12:17:59,364 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-13 12:18:05,143 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:18:08,609 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-13 12:18:08,613 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-13 12:18:15,163 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 12:18:15,165 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-13 12:18:15,167 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-13 12:18:15,167 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 12:18:15,169 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:18:17,776 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-13 12:18:17,780 - INFO - Carregados 1 galpões para consolidação
+2025-11-13 12:18:27,423 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:18:29,976 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 12:18:29,980 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 12:18:29,980 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 12:18:29,981 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:18:32,597 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 12:18:32,602 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 12:18:32,602 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 12:18:32,603 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:18:35,246 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 12:18:35,251 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 12:18:35,252 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 12:18:35,253 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:18:37,891 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 12:18:37,895 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 12:18:37,896 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 12:18:41,016 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 12:18:41,018 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:18:43,608 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-13 12:18:43,621 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-13 12:18:43,622 - INFO - Impressora: 135 - Zebra
+2025-11-13 12:18:43,623 - INFO - Impressora alterada para: Zebra ADM 135
+2025-11-13 12:18:43,624 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-13 12:18:43,937 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-13 12:22:07,797 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-13 12:22:13,442 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:22:17,010 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-13 12:22:17,016 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-13 12:22:20,445 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 12:22:20,445 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-13 12:22:20,447 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-13 12:22:20,448 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 12:22:20,449 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:22:23,027 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-13 12:22:23,032 - INFO - Carregados 1 galpões para consolidação
+2025-11-13 12:22:31,249 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:22:33,806 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 12:22:33,810 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 12:22:33,810 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 12:22:33,811 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:22:36,458 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 12:22:36,463 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 12:22:36,464 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 12:22:36,465 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:22:38,995 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 12:22:38,999 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 12:22:39,000 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 12:22:39,001 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:22:41,607 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 12:22:41,612 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 12:22:41,613 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 12:23:07,748 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 12:23:07,750 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 12:23:10,387 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-13 12:23:10,398 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-13 12:23:10,399 - INFO - Impressora: 135 - Zebra
+2025-11-13 12:23:10,399 - INFO - Impressora alterada para: Zebra ADM 135
+2025-11-13 12:23:10,400 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-13 12:23:10,417 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-13 14:42:31,123 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-13 14:42:38,930 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:42:41,411 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-13 14:42:41,413 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-13 14:42:46,228 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 14:42:46,228 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-13 14:42:46,231 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-13 14:42:46,231 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 14:42:46,232 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:42:48,451 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-13 14:42:48,453 - INFO - Carregados 1 galpões para consolidação
+2025-11-13 14:43:02,724 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:43:04,946 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 500 None
+2025-11-13 14:43:04,948 - ERROR - Erro ao buscar carga 010000031: HTTP 500: Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\Models\Cargo].
+2025-11-13 14:43:04,949 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:43:07,160 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 500 None
+2025-11-13 14:43:07,162 - ERROR - Erro ao buscar carga 030000030: HTTP 500: Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\Models\Cargo].
+2025-11-13 14:43:07,163 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:43:09,367 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 500 None
+2025-11-13 14:43:09,369 - ERROR - Erro ao buscar carga 040000029: HTTP 500: Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\Models\Cargo].
+2025-11-13 14:43:09,370 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:43:11,605 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 500 None
+2025-11-13 14:43:11,606 - ERROR - Erro ao buscar carga 050000028: HTTP 500: Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\Models\Cargo].
+2025-11-13 14:43:11,606 - ERROR - ============================================================
+2025-11-13 14:43:11,607 - ERROR - DETALHES COMPLETOS DOS ERROS DE SERVIDOR:
+2025-11-13 14:43:11,607 - ERROR - 
+Carga: 010000031
+2025-11-13 14:43:11,607 - ERROR - Erro: HTTP 500: Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\Models\Cargo].
+2025-11-13 14:43:11,607 - ERROR - Resposta completa:
+{"success":false,"message":"Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\\Models\\Cargo]."}
+2025-11-13 14:43:11,607 - ERROR - ----------------------------------------
+2025-11-13 14:43:11,607 - ERROR - 
+Carga: 030000030
+2025-11-13 14:43:11,607 - ERROR - Erro: HTTP 500: Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\Models\Cargo].
+2025-11-13 14:43:11,608 - ERROR - Resposta completa:
+{"success":false,"message":"Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\\Models\\Cargo]."}
+2025-11-13 14:43:11,608 - ERROR - ----------------------------------------
+2025-11-13 14:43:11,608 - ERROR - 
+Carga: 040000029
+2025-11-13 14:43:11,608 - ERROR - Erro: HTTP 500: Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\Models\Cargo].
+2025-11-13 14:43:11,608 - ERROR - Resposta completa:
+{"success":false,"message":"Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\\Models\\Cargo]."}
+2025-11-13 14:43:11,608 - ERROR - ----------------------------------------
+2025-11-13 14:43:11,608 - ERROR - 
+Carga: 050000028
+2025-11-13 14:43:11,609 - ERROR - Erro: HTTP 500: Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\Models\Cargo].
+2025-11-13 14:43:11,609 - ERROR - Resposta completa:
+{"success":false,"message":"Erro ao buscar carga: Call to undefined relationship [consolidation] on model [App\\Models\\Cargo]."}
+2025-11-13 14:43:11,609 - ERROR - ----------------------------------------
+2025-11-13 14:43:11,609 - ERROR - ============================================================
+2025-11-13 14:44:51,485 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:44:53,725 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 14:44:53,727 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 14:44:53,727 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 14:44:53,728 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:44:55,966 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 14:44:55,968 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 14:44:55,968 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 14:44:55,969 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:44:58,216 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 14:44:58,218 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 14:44:58,218 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 14:44:58,219 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:45:00,431 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 14:45:00,432 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 14:45:00,433 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 14:45:07,434 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 14:45:07,435 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:45:09,701 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 500 None
+2025-11-13 14:45:09,703 - ERROR - Erro ao criar consolidador - HTTP 500
+2025-11-13 14:45:09,704 - ERROR - Resposta completa: {"success":false,"message":"Erro ao criar consolidador","error":"SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`wms`.`cargos`, CONSTRAINT `cargos_consolidation_id_foreign` FOREIGN KEY (`consolidator_id`) REFERENCES `consolidations` (`id`) ON DELETE SET NULL) (Connection: mysql, SQL: update `cargos` set `consolidator_id` = 14, `cargos`.`updated_at` = 2025-11-13 14:45:09 where `id` = 56)"}
+2025-11-13 14:46:45,988 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:46:48,216 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 14:46:48,218 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 14:46:48,218 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 14:46:48,219 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:46:50,454 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 14:46:50,456 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 14:46:50,456 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 14:46:50,458 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:46:52,765 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 14:46:52,767 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 14:46:52,767 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 14:46:52,768 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:46:55,010 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 14:46:55,012 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 14:46:55,012 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 14:46:57,497 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 14:46:57,498 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 14:46:59,771 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-13 14:46:59,780 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-13 14:46:59,780 - INFO - Impressora: 135 - Zebra
+2025-11-13 14:46:59,780 - INFO - Impressora alterada para: Zebra ADM 135
+2025-11-13 14:46:59,781 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-13 14:47:04,789 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-13 14:47:04,789 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-13 14:47:04,790 - ERROR - Erro ao imprimir: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-13 15:04:48,071 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:04:50,360 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 15:04:50,362 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 15:04:50,362 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 15:04:50,363 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:04:52,605 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 15:04:52,607 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 15:04:52,607 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 15:04:52,608 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:04:54,860 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 15:04:54,862 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 15:04:54,862 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 15:04:54,863 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:04:57,123 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 15:04:57,126 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 15:04:57,126 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 15:11:22,717 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:11:24,982 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 15:11:24,984 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 15:11:24,985 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 15:11:24,985 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:11:27,208 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 15:11:27,210 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 15:11:27,210 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 15:11:27,211 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:11:29,409 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 15:11:29,411 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 15:11:29,411 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 15:11:29,412 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:11:31,620 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 15:11:31,622 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 15:11:31,622 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 15:11:38,027 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 15:11:38,028 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:11:40,261 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 422 None
+2025-11-13 15:11:40,263 - ERROR - Erro ao criar consolidador - HTTP 422
+2025-11-13 15:11:40,264 - ERROR - Resposta completa: {"success":false,"message":"Nenhuma carga v\u00e1lida para consolidar","invalid_cargos":[{"cargo_id":56,"cargo_code":"010000031","errors":[{"type":"ja_consolidada","message":"Carga j\u00e1 est\u00e1 consolidada no consolidador ID 15. Desconsolide primeiro para reconsolidar."}]},{"cargo_id":54,"cargo_code":"040000029","errors":[{"type":"ja_consolidada","message":"Carga j\u00e1 est\u00e1 consolidada no consolidador ID 15. Desconsolide primeiro para reconsolidar."}]},{"cargo_id":53,"cargo_code":"050000028","errors":[{"type":"ja_consolidada","message":"Carga j\u00e1 est\u00e1 consolidada no consolidador ID 15. Desconsolide primeiro para reconsolidar."}]}]}
+2025-11-13 15:18:12,930 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-13 15:18:18,758 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:18:21,276 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-13 15:18:21,278 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-13 15:18:27,259 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 15:18:27,259 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-13 15:18:27,261 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-13 15:18:27,261 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 15:18:27,263 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:18:29,496 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-13 15:18:29,497 - INFO - Carregados 1 galpões para consolidação
+2025-11-13 15:18:47,395 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:18:49,628 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 15:18:49,631 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 15:18:49,631 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 15:18:49,633 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:18:51,885 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 15:18:51,887 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 15:18:51,887 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 15:18:51,888 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:18:54,123 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 15:18:54,126 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 15:18:54,126 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 15:18:54,127 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:18:56,373 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 15:18:56,375 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 15:18:56,375 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 15:18:58,431 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 15:18:58,432 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 15:19:00,674 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 422 None
+2025-11-13 15:19:00,675 - ERROR - Erro ao criar consolidador - HTTP 422
+2025-11-13 15:19:00,675 - ERROR - Resposta completa: {"success":false,"message":"Nenhuma carga v\u00e1lida para consolidar","invalid_cargos":[{"cargo_id":56,"cargo_code":"010000031","errors":[{"type":"ja_consolidada","message":"Carga j\u00e1 est\u00e1 consolidada no consolidador ID 15. Desconsolide primeiro para reconsolidar."}]},{"cargo_id":54,"cargo_code":"040000029","errors":[{"type":"ja_consolidada","message":"Carga j\u00e1 est\u00e1 consolidada no consolidador ID 15. Desconsolide primeiro para reconsolidar."}]},{"cargo_id":53,"cargo_code":"050000028","errors":[{"type":"ja_consolidada","message":"Carga j\u00e1 est\u00e1 consolidada no consolidador ID 15. Desconsolide primeiro para reconsolidar."}]}]}
+2025-11-13 16:49:24,748 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-13 16:49:30,232 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:49:33,591 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-13 16:49:33,595 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-13 16:50:01,688 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 16:50:01,689 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-13 16:50:01,691 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-13 16:50:01,691 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-13 16:50:01,693 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:50:04,274 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-13 16:50:04,279 - INFO - Carregados 1 galpões para consolidação
+2025-11-13 16:51:12,826 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:51:15,456 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 16:51:15,461 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 16:51:15,462 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 16:51:15,464 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:51:18,302 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 16:51:18,307 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 16:51:18,307 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 16:51:18,309 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:51:21,041 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 16:51:21,047 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 16:51:21,047 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 16:51:21,049 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:51:23,658 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 16:51:23,663 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 16:51:23,663 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 16:51:27,683 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 16:51:27,685 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:51:30,310 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-13 16:51:30,320 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-13 16:51:30,321 - INFO - Impressora: 135 - Zebra
+2025-11-13 16:51:30,321 - INFO - Impressora alterada para: Zebra ADM 135
+2025-11-13 16:51:30,322 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-13 16:51:30,342 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-13 16:53:00,865 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:53:03,542 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-13 16:53:03,547 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-13 16:53:03,548 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-13 16:53:03,549 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:53:06,170 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-13 16:53:06,173 - INFO - Busca carga 030000030: ID=55, status=STORED
+2025-11-13 16:53:06,173 - INFO -   \u2717 Carga 030000030 com status inválido: STORED
+2025-11-13 16:53:06,174 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:53:08,739 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-13 16:53:08,743 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-13 16:53:08,743 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-13 16:53:08,743 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:53:11,279 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-13 16:53:11,283 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-13 16:53:11,283 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-13 16:53:13,353 - INFO - Criando consolidador: 3 cargas no galpão 3
+2025-11-13 16:53:13,354 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-13 16:53:16,061 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-13 16:53:16,073 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-13 16:53:16,074 - INFO - Impressora: Zebra ADM 135
+2025-11-13 16:53:19,132 - INFO - ZPL enviado para impressora 192.168.99.135:9100

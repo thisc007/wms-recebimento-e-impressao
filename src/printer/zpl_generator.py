@@ -276,6 +276,122 @@ class ZplGenerator:
         
         return all_zpl
 
+    def build_consolidator_zpl(self, consolidator_code: str, consolidator_data: Dict[str, Any] = None) -> str:
+        """
+        Gera ZPL específico para etiquetas de consolidadores usando QR Code
+
+        Args:
+            consolidator_code: Código do consolidador (ex: 900001)
+            consolidator_data: Dict com valores opcionais: cargo_count, total_weight, total_volume,
+                               warehouse_name, status, created_at, additional_text
+
+        Returns:
+            Código ZPL para etiqueta do consolidador
+        """
+        # valores padrão
+        data = consolidator_data or {}
+        cargo_count = data.get('cargo_count', '')
+        total_weight = data.get('total_weight', '')
+        total_volume = data.get('total_volume', '')
+        warehouse_name = data.get('warehouse_name', '')
+        status = data.get('status', '')
+        created_at = data.get('created_at', '')
+        additional_text = data.get('additional_text', '')
+
+        # Posicionamento independente (ajuste conforme necessário)
+        qr_x = 40
+        qr_y = 300
+        qr_model = '2'    # modelo 2
+        qr_magnification = 10
+
+        code_x = 280
+        code_y = 310
+        code_font_h = 60
+        code_font_w = 60
+
+        info1_x = 280
+        info1_y = 380
+        info1_h = 28
+        info1_w = 28
+
+        info2_x = 280
+        info2_y = 415
+        info2_h = 28
+        info2_w = 28
+
+        info3_x = 280
+        info3_y = 450
+        info3_h = 28
+        info3_w = 28
+
+        footer_x = 70
+        footer_y = 250
+        footer_h = 40
+        footer_w = 40
+
+        # Construir ZPL
+        zpl = "^XA\n"
+        zpl += "^CI28\n"  # UTF-8
+
+        dpi = int(self.defaults.get('dpi', 203))
+        mm_to_dots = dpi / 25.4
+        width_dots = int(round((self.defaults.get('width_mm', 90)) * mm_to_dots))
+        height_dots = int(round((self.defaults.get('height_mm', 70)) * mm_to_dots))
+
+        zpl += f"^PW{width_dots}\n"
+        zpl += f"^LL{height_dots}\n"
+        zpl += "^LH0,0\n"
+
+        # QR Code (ZPL1/2). Usamos BQN (modelo QR) com modo QA (alimentação do dado) - formato: ^BQN,2,5 then ^FDQA,data^FS
+        # Aqui usamos magnification variável
+        zpl += f"^FO{qr_x},{qr_y}\n"
+        zpl += f"^BQN,2,{qr_magnification}\n"
+        # prefix QA to indicate byte mode
+        zpl += f"^FDQA,{consolidator_code}^FS\n"
+
+        # Código do consolidador (texto grande)
+        zpl += f"^FO{code_x},{code_y}\n"
+        zpl += f"^A0N,{code_font_h},{code_font_w}\n"
+        zpl += f"^FD{consolidator_code}^FS\n"
+
+        # Informações - cargo_count / weight / volume
+        if cargo_count != '':
+            zpl += f"^FO{info1_x},{info1_y}\n"
+            zpl += f"^A0N,{info1_h},{info1_w}\n"
+            zpl += f"^FDCargas: {cargo_count}^FS\n"
+
+        if total_weight not in (None, ''):
+            zpl += f"^FO{info2_x},{info2_y}\n"
+            zpl += f"^A0N,{info2_h},{info2_w}\n"
+            zpl += f"^FDPeso: {total_weight} kg^FS\n"
+
+        if total_volume not in (None, ''):
+            zpl += f"^FO{info3_x},{info3_y}\n"
+            zpl += f"^A0N,{info3_h},{info3_w}\n"
+            zpl += f"^FDVol: {total_volume} m3^FS\n"
+
+        # Warehouse / Status
+        footer_texts = []
+        if warehouse_name:
+            footer_texts.append(f"Galpão: {warehouse_name}")
+        
+
+        if footer_texts or additional_text:
+            y = footer_y
+            for t in footer_texts:
+                zpl += f"^FO{footer_x},{y}\n"
+                zpl += f"^A0N,{footer_h},{footer_w}\n"
+                zpl += f"^FD{t}^FS\n"
+                y += 24
+
+            if additional_text:
+                zpl += f"^FO{footer_x},{y}\n"
+                zpl += f"^A0N,{footer_h},{footer_w}\n"
+                zpl += f"^FD{additional_text}^FS\n"
+
+        zpl += "^XZ\n"
+        return zpl
+
     # Métodos da classe original (manter compatibilidade)
     def add_text(self, x, y, text, font='0', rotation='0', width='1', height='1'):
         command = f'^FO{x},{y}^A{font},{height},{width}^FD{text}^FS'

@@ -340,7 +340,15 @@ class MainWindow:
                                          command=self.open_receive_load,
                                          style='Compact.TButton')
         receive_load_button.pack(pady=8, fill=tk.X)
-         # Separador
+        
+        # Botão Consolidação (novo)
+        consolidation_button = ttk.Button(buttons_frame,
+                                          text="🧩 Consolidação",
+                                          command=self.open_consolidators,
+                                          style='Compact.TButton')
+        consolidation_button.pack(pady=8, fill=tk.X)
+        
+        # Separador
         separator = ttk.Separator(buttons_frame, orient='horizontal')
         separator.pack(fill=tk.X, pady=12)  # Reduzido de 20 para 12
         # Botão de configuração de impressoras
@@ -350,10 +358,6 @@ class MainWindow:
                                           style='Compact.TButton')
         printer_config_button.pack(pady=8, fill=tk.X)
         
-       
-        
-       
-
         separator2 = ttk.Separator(buttons_frame, orient='horizontal')
         separator2.pack(fill=tk.X, pady=12)
         
@@ -439,6 +443,13 @@ class MainWindow:
                                          command=self.open_receive_load,
                                          style='Menu.TButton')
         receive_load_button.pack(pady=15, fill=tk.X)
+        
+        # Botão Consolidação (novo)
+        consolidation_button = ttk.Button(buttons_frame,
+                                          text="🧩 Consolidação",
+                                          command=self.open_consolidators,
+                                          style='Menu.TButton')
+        consolidation_button.pack(pady=15, fill=tk.X)
         
         # Separador
         separator = ttk.Separator(buttons_frame, orient='horizontal')
@@ -659,6 +670,65 @@ class MainWindow:
             self.root.lift()
             self.root.focus_force()
             print("DEBUG: Janela principal reabilitada (receive_load).")
+
+    def open_consolidators(self):
+        """Abre a janela de Consolidadores (Consolidação e Impressão)"""
+        consol_window = None
+        window_closed = False
+
+        def on_window_close():
+            nonlocal window_closed
+            window_closed = True
+            print("DEBUG: Callback de fechamento (consolidators) executado")
+            if consol_window and consol_window.root.winfo_exists():
+                consol_window.root.destroy()
+
+        try:
+            from ui.consolidator_window import ConsolidatorWindow
+
+            log_info(f"Usuário {self.user_data.get('name', 'N/A')} (CPF: {format_cpf(self.cpf)}) acessou consolidação")
+
+            # Desabilitar janela principal
+            print("DEBUG: Desabilitando janela principal (consolidators)...")
+            self.disable_main_window()
+            print("DEBUG: Janela principal desabilitada (consolidators).")
+
+            # Abrir janela de consolidadores - passar self.root como parent
+            consol_window = ConsolidatorWindow(self.cpf, self.token, self.user_data, parent=self.root)
+
+            # Configurar callback de fechamento
+            consol_window.root.protocol("WM_DELETE_WINDOW", on_window_close)
+
+            # Executar modal
+            consol_window.root.grab_set()
+
+            print("DEBUG: Aguardando fechamento da janela modal (consolidators)...")
+            while not window_closed:
+                try:
+                    self.root.update()
+                    if not consol_window.root.winfo_exists():
+                        window_closed = True
+                        break
+                except:
+                    window_closed = True
+                    break
+
+            print("DEBUG: Janela modal (consolidators) foi fechada.")
+
+        except Exception as e:
+            log_error(f"Erro ao abrir consolidador: {str(e)}")
+            messagebox.showerror("Erro", f"Erro ao abrir consolidador:\n{str(e)}")
+        finally:
+            print("DEBUG: Executando finally (consolidators) - reabilitando janela principal...")
+            try:
+                if consol_window and consol_window.root.winfo_exists():
+                    consol_window.root.destroy()
+            except:
+                pass
+            self.enable_main_window()
+            self.root.lift()
+            self.root.focus_force()
+            print("DEBUG: Janela principal reabilitada (consolidators).")
         
     def open_label_printer_settings(self):
         """Abre a janela de configuração da etiquetadora"""

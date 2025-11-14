@@ -171,8 +171,20 @@ class LoginWindowSimple:
     def open_main_window(self, cpf, token, user_data):
         """Abre a janela principal após login bem-sucedido"""
         from ui.gui import MainWindow  # Import da classe MainWindow correta
-        self.root.destroy()
+        # Cria a janela principal primeiro. Só destrói a janela de login
+        # depois que a MainWindow for instanciada com sucesso, para evitar
+        # acessar widgets destruídos se ocorrer um erro durante a criação.
         main_window = MainWindow(cpf, token, user_data)
+        try:
+            main_window.set_main_spacing_style('compact')
+        except Exception:
+            # Se falhar ao ajustar o estilo, não impedimos a abertura da janela
+            pass
+        # Agora podemos descartar a janela de login e abrir a principal
+        try:
+            self.root.destroy()
+        except Exception:
+            pass
         main_window.run()
         
     def run(self):
