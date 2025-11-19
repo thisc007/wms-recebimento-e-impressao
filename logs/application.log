@@ -4021,3 +4021,1655 @@ Carga: 050000028
 2025-11-13 16:53:16,073 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
 2025-11-13 16:53:16,074 - INFO - Impressora: Zebra ADM 135
 2025-11-13 16:53:19,132 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-14 17:36:41,151 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-14 17:36:47,472 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:36:51,588 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-14 17:36:51,590 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-14 17:37:08,247 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-14 17:37:08,247 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-14 17:37:08,249 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-14 17:37:08,250 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-14 17:37:08,251 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:37:10,728 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-14 17:37:10,731 - INFO - Carregados 1 galpões para consolidação
+2025-11-14 17:37:10,733 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:37:13,072 - DEBUG - http://localhost:8000 "GET /api/customers HTTP/1.1" 200 None
+2025-11-14 17:37:13,074 - INFO - Carregados 6 clientes para consolidação
+2025-11-14 17:42:26,316 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:42:28,545 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-14 17:42:28,547 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-14 17:42:28,548 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-14 17:42:28,549 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:42:30,788 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-14 17:42:30,791 - INFO - Busca carga 030000030: ID=55, status=NOT_RECEIVED
+2025-11-14 17:42:30,791 - INFO -   \u2717 Carga 030000030 com status inválido: NOT_RECEIVED
+2025-11-14 17:42:30,792 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:42:33,018 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-14 17:42:33,020 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-14 17:42:33,020 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-14 17:42:33,020 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:42:35,228 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-14 17:42:35,229 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-14 17:42:35,229 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-14 17:42:39,969 - INFO - Criando consolidador: 3 cargas no galpão 3 para cliente 4
+2025-11-14 17:42:39,971 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:42:42,693 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 500 None
+2025-11-14 17:42:42,695 - ERROR - Erro ao criar consolidador - HTTP 500
+2025-11-14 17:42:42,695 - ERROR - Resposta completa: {"success":false,"message":"Erro ao criar consolidador","error":"SQLSTATE[42S22]: Column not found: 1054 Unknown column 'customer_id' in 'field list' (Connection: mysql, SQL: insert into `consolidators` (`warehouse_id`, `customer_id`, `code`, `status`, `updated_at`, `created_at`) values (3, 4, 900001, created, 2025-11-14 17:42:42, 2025-11-14 17:42:42))"}
+2025-11-14 17:45:51,012 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:45:55,091 - ERROR - Erro ao buscar carga 010000031: Erro de conexão - verifique a conectividade com a API
+2025-11-14 17:45:55,202 - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+        (self._dns_host, self.port), self.timeout, **extra_kw
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+        self, "Failed to establish a new connection: %s" % e
+    )
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000026945DA2650>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<8 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/010000031 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945DA2650>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 31, in send_request
+    response = requests.get(url, headers=request_headers, timeout=self.timeout, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/010000031 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945DA2650>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\ui\consolidator_window.py", line 315, in consolidate_and_print
+    resp = self.api_client.get(f'/cargos/code/{code}', headers=headers)
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 52, in get
+    return self.send_request(endpoint, method='GET', headers=headers, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 46, in send_request
+    raise Exception("Erro de conexão - verifique a conectividade com a API")
+Exception: Erro de conexão - verifique a conectividade com a API
+
+2025-11-14 17:45:55,207 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:45:59,298 - ERROR - Erro ao buscar carga 030000030: Erro de conexão - verifique a conectividade com a API
+2025-11-14 17:45:59,302 - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+        (self._dns_host, self.port), self.timeout, **extra_kw
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+        self, "Failed to establish a new connection: %s" % e
+    )
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000026945DA3150>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<8 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/030000030 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945DA3150>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 31, in send_request
+    response = requests.get(url, headers=request_headers, timeout=self.timeout, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/030000030 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945DA3150>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\ui\consolidator_window.py", line 315, in consolidate_and_print
+    resp = self.api_client.get(f'/cargos/code/{code}', headers=headers)
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 52, in get
+    return self.send_request(endpoint, method='GET', headers=headers, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 46, in send_request
+    raise Exception("Erro de conexão - verifique a conectividade com a API")
+Exception: Erro de conexão - verifique a conectividade com a API
+
+2025-11-14 17:45:59,307 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:46:03,399 - ERROR - Erro ao buscar carga 040000029: Erro de conexão - verifique a conectividade com a API
+2025-11-14 17:46:03,402 - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+        (self._dns_host, self.port), self.timeout, **extra_kw
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+        self, "Failed to establish a new connection: %s" % e
+    )
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000026945E79040>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<8 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/040000029 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945E79040>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 31, in send_request
+    response = requests.get(url, headers=request_headers, timeout=self.timeout, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/040000029 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945E79040>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\ui\consolidator_window.py", line 315, in consolidate_and_print
+    resp = self.api_client.get(f'/cargos/code/{code}', headers=headers)
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 52, in get
+    return self.send_request(endpoint, method='GET', headers=headers, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 46, in send_request
+    raise Exception("Erro de conexão - verifique a conectividade com a API")
+Exception: Erro de conexão - verifique a conectividade com a API
+
+2025-11-14 17:46:03,408 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:46:07,486 - ERROR - Erro ao buscar carga 050000028: Erro de conexão - verifique a conectividade com a API
+2025-11-14 17:46:07,491 - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+        (self._dns_host, self.port), self.timeout, **extra_kw
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+        self, "Failed to establish a new connection: %s" % e
+    )
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000026945E79B80>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<8 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/050000028 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945E79B80>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 31, in send_request
+    response = requests.get(url, headers=request_headers, timeout=self.timeout, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/050000028 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945E79B80>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\ui\consolidator_window.py", line 315, in consolidate_and_print
+    resp = self.api_client.get(f'/cargos/code/{code}', headers=headers)
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 52, in get
+    return self.send_request(endpoint, method='GET', headers=headers, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 46, in send_request
+    raise Exception("Erro de conexão - verifique a conectividade com a API")
+Exception: Erro de conexão - verifique a conectividade com a API
+
+2025-11-14 17:46:07,496 - ERROR - ============================================================
+2025-11-14 17:46:07,496 - ERROR - DETALHES COMPLETOS DOS ERROS DE SERVIDOR:
+2025-11-14 17:46:07,497 - ERROR - 
+Carga: 010000031
+2025-11-14 17:46:07,497 - ERROR - Erro: Exceção: Erro de conexão - verifique a conectividade com a API
+2025-11-14 17:46:07,497 - ERROR - Resposta completa:
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+        (self._dns_host, self.port), self.timeout, **extra_kw
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+        self, "Failed to establish a new connection: %s" % e
+    )
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000026945DA2650>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<8 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/010000031 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945DA2650>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 31, in send_request
+    response = requests.get(url, headers=request_headers, timeout=self.timeout, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/010000031 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945DA2650>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\ui\consolidator_window.py", line 315, in consolidate_and_print
+    resp = self.api_client.get(f'/cargos/code/{code}', headers=headers)
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 52, in get
+    return self.send_request(endpoint, method='GET', headers=headers, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 46, in send_request
+    raise Exception("Erro de conexão - verifique a conectividade com a API")
+Exception: Erro de conexão - verifique a conectividade com a API
+
+2025-11-14 17:46:07,499 - ERROR - ----------------------------------------
+2025-11-14 17:46:07,500 - ERROR - 
+Carga: 030000030
+2025-11-14 17:46:07,500 - ERROR - Erro: Exceção: Erro de conexão - verifique a conectividade com a API
+2025-11-14 17:46:07,500 - ERROR - Resposta completa:
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+        (self._dns_host, self.port), self.timeout, **extra_kw
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+        self, "Failed to establish a new connection: %s" % e
+    )
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000026945DA3150>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<8 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/030000030 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945DA3150>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 31, in send_request
+    response = requests.get(url, headers=request_headers, timeout=self.timeout, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/030000030 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945DA3150>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\ui\consolidator_window.py", line 315, in consolidate_and_print
+    resp = self.api_client.get(f'/cargos/code/{code}', headers=headers)
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 52, in get
+    return self.send_request(endpoint, method='GET', headers=headers, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 46, in send_request
+    raise Exception("Erro de conexão - verifique a conectividade com a API")
+Exception: Erro de conexão - verifique a conectividade com a API
+
+2025-11-14 17:46:07,503 - ERROR - ----------------------------------------
+2025-11-14 17:46:07,503 - ERROR - 
+Carga: 040000029
+2025-11-14 17:46:07,503 - ERROR - Erro: Exceção: Erro de conexão - verifique a conectividade com a API
+2025-11-14 17:46:07,503 - ERROR - Resposta completa:
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+        (self._dns_host, self.port), self.timeout, **extra_kw
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+        self, "Failed to establish a new connection: %s" % e
+    )
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000026945E79040>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<8 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/040000029 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945E79040>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 31, in send_request
+    response = requests.get(url, headers=request_headers, timeout=self.timeout, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/040000029 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945E79040>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\ui\consolidator_window.py", line 315, in consolidate_and_print
+    resp = self.api_client.get(f'/cargos/code/{code}', headers=headers)
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 52, in get
+    return self.send_request(endpoint, method='GET', headers=headers, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 46, in send_request
+    raise Exception("Erro de conexão - verifique a conectividade com a API")
+Exception: Erro de conexão - verifique a conectividade com a API
+
+2025-11-14 17:46:07,505 - ERROR - ----------------------------------------
+2025-11-14 17:46:07,506 - ERROR - 
+Carga: 050000028
+2025-11-14 17:46:07,506 - ERROR - Erro: Exceção: Erro de conexão - verifique a conectividade com a API
+2025-11-14 17:46:07,506 - ERROR - Resposta completa:
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+        (self._dns_host, self.port), self.timeout, **extra_kw
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+        self, "Failed to establish a new connection: %s" % e
+    )
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000026945E79B80>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<8 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/050000028 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945E79B80>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 31, in send_request
+    response = requests.get(url, headers=request_headers, timeout=self.timeout, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\LOWCOST\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/cargos/code/050000028 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026945E79B80>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\ui\consolidator_window.py", line 315, in consolidate_and_print
+    resp = self.api_client.get(f'/cargos/code/{code}', headers=headers)
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 52, in get
+    return self.send_request(endpoint, method='GET', headers=headers, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\api\client.py", line 46, in send_request
+    raise Exception("Erro de conexão - verifique a conectividade com a API")
+Exception: Erro de conexão - verifique a conectividade com a API
+
+2025-11-14 17:46:07,509 - ERROR - ----------------------------------------
+2025-11-14 17:46:07,509 - ERROR - ============================================================
+2025-11-14 17:46:56,195 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-14 17:46:56,197 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-14 17:46:56,197 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-14 17:46:56,198 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:47:00,316 - ERROR - Erro ao carregar galpões (consolidator): Erro de conexão - verifique a conectividade com a API
+2025-11-14 17:47:00,317 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:47:04,374 - ERROR - Erro ao carregar clientes (consolidator): Erro de conexão - verifique a conectividade com a API
+2025-11-14 17:47:51,498 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou consolidação
+2025-11-14 17:47:51,500 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-14 17:47:51,500 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-14 17:47:51,501 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:47:53,730 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-14 17:47:53,733 - INFO - Carregados 1 galpões para consolidação
+2025-11-14 17:47:53,734 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:47:56,028 - DEBUG - http://localhost:8000 "GET /api/customers HTTP/1.1" 200 None
+2025-11-14 17:47:56,030 - INFO - Carregados 6 clientes para consolidação
+2025-11-14 17:48:04,217 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:48:06,428 - DEBUG - http://localhost:8000 "GET /api/cargos/code/010000031 HTTP/1.1" 200 None
+2025-11-14 17:48:06,430 - INFO - Busca carga 010000031: ID=56, status=RECEIVED
+2025-11-14 17:48:06,431 - INFO -   \u2713 Carga 010000031 apta para consolidação
+2025-11-14 17:48:06,431 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:48:08,648 - DEBUG - http://localhost:8000 "GET /api/cargos/code/030000030 HTTP/1.1" 200 None
+2025-11-14 17:48:08,650 - INFO - Busca carga 030000030: ID=55, status=NOT_RECEIVED
+2025-11-14 17:48:08,650 - INFO -   \u2717 Carga 030000030 com status inválido: NOT_RECEIVED
+2025-11-14 17:48:08,651 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:48:10,884 - DEBUG - http://localhost:8000 "GET /api/cargos/code/040000029 HTTP/1.1" 200 None
+2025-11-14 17:48:10,886 - INFO - Busca carga 040000029: ID=54, status=RECEIVED
+2025-11-14 17:48:10,886 - INFO -   \u2713 Carga 040000029 apta para consolidação
+2025-11-14 17:48:10,887 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:48:13,108 - DEBUG - http://localhost:8000 "GET /api/cargos/code/050000028 HTTP/1.1" 200 None
+2025-11-14 17:48:13,111 - INFO - Busca carga 050000028: ID=53, status=RECEIVED
+2025-11-14 17:48:13,111 - INFO -   \u2713 Carga 050000028 apta para consolidação
+2025-11-14 17:48:19,594 - INFO - Criando consolidador: 3 cargas no galpão 3 para cliente 4
+2025-11-14 17:48:19,595 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-14 17:48:21,881 - DEBUG - http://localhost:8000 "POST /api/consolidators HTTP/1.1" 201 None
+2025-11-14 17:48:21,896 - INFO - Enviando job de impressão: 1 etiqueta(s) via configured
+2025-11-14 17:48:21,896 - INFO - Impressora: 135 - Zebra
+2025-11-14 17:48:21,896 - INFO - Impressora alterada para: Zebra ADM 135
+2025-11-14 17:48:21,896 - INFO - Usando impressora de rede: 192.168.99.135:9100
+2025-11-14 17:48:26,907 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-14 17:48:26,908 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-14 17:48:26,909 - ERROR - Erro ao imprimir: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-17 15:49:31,944 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 15:49:39,286 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 15:49:42,836 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 15:49:42,841 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 15:49:49,157 - ERROR - Erro ao abrir janela de endereçamento: No module named 'src'
+2025-11-17 15:54:07,113 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 15:54:13,443 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 15:54:16,901 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 15:54:16,907 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 15:54:29,783 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 15:54:29,783 - ERROR - Erro ao abrir janela de endereçamento: cannot import name 'Config' from 'utils.config' (C:\xampp\htdocs\wms-recebimento-e-impressao\printing-service\src\utils\config.py)
+2025-11-17 15:56:16,571 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 15:56:22,644 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 15:56:26,202 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 15:56:26,208 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 15:56:33,455 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 15:56:33,457 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 15:56:33,457 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 15:56:33,460 - ERROR - Erro ao abrir janela de endereçamento: Too early to create variable: no default root window
+2025-11-17 15:57:22,968 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 15:57:27,931 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 15:57:31,373 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 15:57:31,378 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 15:57:35,310 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 15:57:35,311 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 15:57:35,311 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 15:57:35,396 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 15:57:37,930 - DEBUG - http://localhost:8000 "GET /api/api/warehouses HTTP/1.1" 404 None
+2025-11-17 15:58:40,695 - ERROR - Erro ao carregar impressoras: 'LabelPrinter' object has no attribute 'list_printers'
+2025-11-17 15:58:50,511 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 15:58:55,699 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 15:58:59,226 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 15:58:59,228 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 15:59:05,875 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 15:59:05,876 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 15:59:05,877 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 15:59:05,939 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 15:59:08,563 - DEBUG - http://localhost:8000 "GET /api/warehouses HTTP/1.1" 401 None
+2025-11-17 16:00:53,279 - ERROR - Erro ao carregar impressoras: 'LabelPrinter' object has no attribute 'list_printers'
+2025-11-17 16:01:02,704 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:01:10,732 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:01:14,161 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:01:14,167 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:01:17,963 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:01:17,964 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:01:17,965 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:01:18,039 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:01:20,705 - DEBUG - http://localhost:8000 "GET /api/warehouses HTTP/1.1" 200 None
+2025-11-17 16:01:20,710 - ERROR - Erro ao carregar galpões: string indices must be integers, not 'str'
+2025-11-17 16:01:34,599 - ERROR - Erro ao carregar impressoras: 'LabelPrinter' object has no attribute 'list_printers'
+2025-11-17 16:03:04,009 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:03:08,843 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:03:12,250 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:03:12,256 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:03:16,195 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:03:16,196 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:03:16,197 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:03:16,283 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:03:19,005 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:03:19,012 - ERROR - Erro ao carregar impressoras: 'LabelPrinter' object has no attribute 'list_printers'
+2025-11-17 16:05:17,795 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:05:22,731 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:05:26,256 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:05:26,261 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:05:31,507 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:05:31,507 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:05:31,508 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:05:31,580 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:05:34,187 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:05:35,525 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:05:38,460 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:05:38,466 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:06:19,086 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:06:19,087 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:06:19,087 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:06:19,104 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:06:19,104 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:06:19,108 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:06:19,109 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:06:19,118 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:06:19,120 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:06:19,121 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:06:19,122 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:06:19,141 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:06:19,142 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:06:19,142 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:06:19,143 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:06:19,152 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:06:19,152 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:06:19,153 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:06:19,154 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:06:19,180 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:06:19,204 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:06:19,205 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:06:19,205 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:06:19,229 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:11:10,708 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:11:16,792 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:11:20,348 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:11:20,355 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:19:44,700 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:19:54,052 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:19:57,619 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:19:57,624 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:20:05,465 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:20:05,466 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:20:05,466 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:20:05,546 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:20:08,116 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:20:09,573 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:20:12,451 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:20:12,454 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:20:17,879 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:20:17,880 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:20:17,880 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:20:17,909 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:20:17,910 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:20:17,910 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:20:17,910 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:20:17,922 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:22:24,720 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:22:29,557 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:22:33,040 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:22:33,048 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:22:36,846 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:22:36,847 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:22:36,849 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:22:36,927 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:22:39,544 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:22:40,339 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:22:43,279 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:22:43,285 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:22:45,035 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:22:45,036 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:22:45,037 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:22:45,048 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:22:45,050 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:22:45,051 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:22:45,051 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:22:45,056 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:23:43,135 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:23:49,301 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:23:52,660 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:23:52,665 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:24:01,109 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:24:01,110 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:24:01,110 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:24:01,201 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:24:03,747 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:24:11,683 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:24:14,600 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:24:14,606 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:24:18,696 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:24:18,696 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:24:18,697 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:24:18,706 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:24:18,707 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:24:18,708 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:24:18,708 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:24:18,724 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:24:32,376 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:24:32,377 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:24:32,378 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:24:32,397 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:26:21,435 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:26:26,156 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:26:29,603 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:26:29,607 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:26:36,256 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:26:36,258 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:26:36,259 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:26:36,333 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:26:38,860 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:26:39,830 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:26:42,701 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:26:42,708 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:26:50,088 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:26:50,088 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:26:50,089 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:26:50,137 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:28:19,132 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:28:26,978 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:28:30,600 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:28:30,605 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:28:36,625 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:28:36,626 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:28:36,627 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:28:36,707 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:28:39,267 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:28:43,477 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:28:46,361 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:28:46,365 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:28:47,967 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:28:47,968 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:28:47,969 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:28:47,979 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:30:11,292 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:30:16,711 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:30:20,084 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:30:20,089 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:30:51,172 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:30:55,865 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:30:59,271 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:30:59,275 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:32:43,058 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:32:43,060 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:32:43,061 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:32:43,132 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:32:45,700 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:32:47,158 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:32:50,051 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:32:50,058 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:32:55,273 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:32:55,274 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:32:55,275 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:32:55,285 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:36:45,313 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:36:50,040 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:36:53,576 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:36:53,581 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:36:56,861 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:36:56,862 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:36:56,863 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:36:56,944 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:36:59,559 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:37:01,529 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:37:04,414 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:37:04,420 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:37:05,712 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:37:05,713 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:37:05,713 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:37:05,727 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:38:33,487 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:38:39,476 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:38:42,876 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:38:42,880 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:38:50,499 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:38:50,500 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:38:50,501 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:38:50,578 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:38:53,178 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:38:54,497 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:38:57,459 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:38:57,464 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:38:58,664 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:38:58,664 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:38:58,665 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:38:58,678 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:40:33,495 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:40:40,798 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:40:44,212 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:40:44,216 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:40:48,950 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:40:48,952 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:40:48,953 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:40:49,029 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:40:51,627 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:40:52,299 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:40:55,227 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:40:55,233 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:40:58,648 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:40:58,649 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:40:58,649 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:40:58,658 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:45:24,244 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:45:35,522 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:45:39,106 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:45:39,112 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:46:31,959 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:46:31,962 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:46:31,963 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:46:32,037 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:46:34,666 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:46:36,443 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:46:39,399 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:46:39,404 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:46:40,487 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:46:40,487 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:46:40,488 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:46:40,493 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 16:49:40,863 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 16:49:46,122 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:49:49,596 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 16:49:49,600 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 16:49:53,672 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 16:49:53,672 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 16:49:53,675 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:49:53,749 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:49:56,342 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 16:49:57,744 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 16:50:00,657 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 16:50:00,662 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 16:50:02,332 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 16:50:02,333 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 16:50:02,333 - INFO - Impressora: 135 - Zebra
+2025-11-17 16:50:02,351 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:02:25,182 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 18:02:32,146 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:02:35,815 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 18:02:35,822 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 18:02:40,366 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 18:02:40,367 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 18:02:40,367 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:02:40,374 - ERROR - Erro ao abrir janela de endereçamento: Too early to create variable: no default root window
+2025-11-17 18:05:33,334 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 18:05:39,086 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:05:42,625 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 18:05:42,632 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 18:05:50,975 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 18:05:50,976 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 18:05:50,983 - ERROR - Erro ao abrir janela de endereçamento: Too early to create variable: no default root window
+2025-11-17 18:08:16,794 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 18:08:21,669 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:08:25,220 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 18:08:25,227 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 18:08:32,615 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 18:08:32,616 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 18:08:32,737 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:08:35,382 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 18:09:03,882 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:09:06,866 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 18:09:06,872 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 18:09:20,922 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:20,923 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:20,923 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:20,944 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:20,944 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:20,945 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:20,945 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:20,952 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:20,953 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:20,953 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:20,953 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:20,967 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:20,978 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:20,983 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:20,983 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:20,991 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:20,995 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:20,996 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:20,997 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:21,007 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:21,008 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:21,010 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:21,011 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:21,021 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:21,022 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:21,023 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:21,023 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:21,031 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:21,031 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:21,031 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:21,032 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:21,046 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:21,047 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:21,047 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:21,048 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:21,063 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:21,065 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:21,066 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:21,067 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:21,091 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:21,092 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:21,093 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:21,093 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:21,108 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:21,111 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:21,111 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:21,112 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:21,149 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:09:21,150 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:09:21,151 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:09:21,151 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:09:21,162 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:17,391 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 18:16:25,389 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:16:28,928 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 18:16:28,934 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 18:16:35,113 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 18:16:35,114 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 18:16:35,229 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:16:37,841 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 18:16:38,874 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:16:41,822 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 18:16:41,828 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 18:16:48,808 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:48,808 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:48,808 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:48,827 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:48,828 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:48,828 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:48,829 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:48,859 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:48,859 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:48,860 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:48,861 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:48,887 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:48,887 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:48,888 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:48,888 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:48,896 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:48,898 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:48,899 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:48,900 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:48,906 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:48,907 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:48,907 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:48,907 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:48,913 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:48,914 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:48,915 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:48,915 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:48,929 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:48,930 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:48,930 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:48,931 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:48,944 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:48,945 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:48,946 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:48,947 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:48,954 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:48,955 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:48,955 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:48,955 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:48,974 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:48,975 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:48,975 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:48,976 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:49,009 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:49,010 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:49,011 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:49,012 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:49,031 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:16:49,032 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:16:49,033 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:16:49,034 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:16:49,051 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:21:29,967 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:21:32,885 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 18:21:32,894 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 18:21:41,226 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:21:41,227 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:21:41,227 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:21:41,235 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:21:41,236 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:21:41,236 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:21:41,237 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:21:41,244 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:21:41,245 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:21:41,246 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:21:41,246 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:21:41,252 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:21:41,253 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:21:41,254 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:21:41,254 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:21:41,276 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:21:41,277 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:21:41,277 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:21:41,277 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:21:41,283 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:23:25,791 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 18:23:33,269 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:23:36,884 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 18:23:36,890 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 18:23:55,678 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 18:23:55,680 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 18:23:55,833 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:23:58,497 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 18:24:02,153 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:24:05,046 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 18:24:05,053 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 18:24:08,692 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:24:08,692 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:24:08,693 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:24:08,708 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:24:08,709 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:24:08,710 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:24:08,710 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:24:08,720 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:24:08,720 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:24:08,721 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:24:08,721 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:24:08,744 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:24:08,745 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:24:08,746 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:24:08,746 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:24:08,752 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:24:08,753 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:24:08,753 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:24:08,754 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:24:08,778 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:24:55,867 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 18:25:01,624 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:25:05,082 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 18:25:05,087 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 18:25:48,204 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 18:25:48,205 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 18:25:48,325 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:25:51,048 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 18:25:52,243 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:25:55,136 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 18:25:55,142 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 18:25:58,324 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:25:58,324 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:25:58,325 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:25:58,335 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:25:58,336 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:25:58,336 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:25:58,336 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:25:58,346 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:25:58,347 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:25:58,348 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:25:58,348 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:25:58,376 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:25:58,379 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:25:58,380 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:25:58,380 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:25:58,392 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:25:58,392 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:25:58,393 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:25:58,394 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:25:58,400 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:27:37,446 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-17 18:27:45,369 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:27:48,886 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-17 18:27:48,892 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-17 18:27:53,693 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-17 18:27:53,694 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-17 18:27:53,816 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:27:56,537 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-17 18:27:57,777 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-17 18:28:00,703 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-17 18:28:00,709 - INFO - Warehouse carregado: Cotia 1
+2025-11-17 18:28:02,636 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:28:02,637 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:28:02,637 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:28:02,644 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:28:02,645 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:28:02,645 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:28:02,646 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:28:02,653 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:28:02,656 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:28:02,656 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:28:02,657 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:28:02,668 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:28:02,669 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:28:02,669 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:28:02,669 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:28:02,695 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:28:02,696 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:28:02,696 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:28:02,697 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:28:02,700 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:28:23,510 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:28:23,510 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:28:23,511 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:28:23,527 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:28:23,528 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:28:23,528 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:28:23,529 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:28:23,540 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:28:23,541 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:28:23,542 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:28:23,542 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:28:23,550 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:28:23,551 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:28:23,551 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:28:23,552 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:28:23,573 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-17 18:28:23,575 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-17 18:28:23,576 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-17 18:28:23,577 - INFO - Impressora: 135 - Zebra
+2025-11-17 18:28:23,604 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:33:52,805 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-18 10:33:59,188 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:34:04,397 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-18 10:34:04,403 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-18 10:34:09,112 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-18 10:34:09,113 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-18 10:34:09,232 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:34:12,060 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-18 10:34:13,382 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:34:16,417 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-18 10:34:16,424 - INFO - Warehouse carregado: Cotia 1
+2025-11-18 10:34:20,374 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:34:20,374 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:34:20,375 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:34:25,373 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:25,374 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:25,375 - ERROR - Erro ao imprimir: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:25,375 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:34:25,376 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:34:25,377 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:34:30,381 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:30,382 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:30,382 - ERROR - Erro ao imprimir: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:30,383 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:34:30,383 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:34:30,383 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:34:35,400 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:35,401 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:35,401 - ERROR - Erro ao imprimir: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:35,402 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:34:35,402 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:34:35,403 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:34:40,404 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:40,405 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:40,405 - ERROR - Erro ao imprimir: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:40,406 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:34:40,406 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:34:40,406 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:34:45,412 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:45,414 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:34:45,415 - ERROR - Erro ao imprimir: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:35:00,838 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:35:00,838 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:35:00,839 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:35:05,848 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:35:05,849 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:35:05,849 - ERROR - Erro ao imprimir: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:35:05,850 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:35:05,850 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:35:05,851 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:35:10,855 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:35:10,857 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:35:10,858 - ERROR - Erro ao imprimir: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:35:10,858 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:35:10,858 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:35:10,859 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:35:15,868 - ERROR - Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:35:15,870 - ERROR - Erro no job de impressão: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:35:15,871 - ERROR - Erro ao imprimir: Timeout ao conectar na impressora 192.168.99.135:9100
+2025-11-18 10:35:15,872 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:35:15,872 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:35:15,873 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:35:16,907 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:35:16,908 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:35:16,908 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:35:16,909 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:35:16,918 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:35:58,305 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:35:58,307 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:35:58,308 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:35:58,321 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:35:58,322 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:35:58,322 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:35:58,322 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:35:58,329 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:35:58,330 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:35:58,330 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:35:58,331 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:35:58,337 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:35:58,338 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:35:58,339 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:35:58,339 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:35:58,362 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:35:58,363 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:35:58,363 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:35:58,364 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:35:58,400 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:41:28,671 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-18 10:41:33,386 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:41:36,940 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-18 10:41:36,947 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-18 10:41:43,712 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-18 10:41:43,712 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-18 10:41:43,813 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:41:46,413 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-18 10:41:55,420 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:41:58,274 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-18 10:41:58,279 - INFO - Warehouse carregado: Cotia 1
+2025-11-18 10:42:01,284 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:42:01,284 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:42:01,284 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:42:01,296 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:42:01,297 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:42:01,297 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:42:01,297 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:42:01,307 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:42:01,308 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:42:01,309 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:42:01,309 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:42:01,345 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:42:59,832 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-18 10:43:05,943 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:43:09,422 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-18 10:43:09,427 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-18 10:43:39,037 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-18 10:43:39,038 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-18 10:43:39,147 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:43:41,837 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-18 10:43:43,578 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:43:46,362 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-18 10:43:46,367 - INFO - Warehouse carregado: Cotia 1
+2025-11-18 10:43:50,327 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:43:50,328 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:43:50,328 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:43:50,347 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:43:50,349 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:43:50,350 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:43:50,350 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:43:50,379 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:43:50,380 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:43:50,381 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:43:50,381 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:43:50,398 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:45:51,925 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-18 10:45:58,223 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:46:01,716 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-18 10:46:01,721 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-18 10:47:14,585 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-18 10:47:18,988 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:47:22,362 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-18 10:47:22,365 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-18 10:47:26,147 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-18 10:47:26,148 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-18 10:47:26,259 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:47:28,851 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-18 10:47:30,517 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:47:33,350 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-18 10:47:33,356 - INFO - Warehouse carregado: Cotia 1
+2025-11-18 10:47:37,358 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:47:37,359 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:47:37,359 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:47:37,364 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:47:37,365 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:47:37,366 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:47:37,366 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:47:37,373 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:47:37,375 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:47:37,375 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:47:37,375 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:47:37,381 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:48:20,314 - INFO - Iniciando aplicação GUI (versão simples)
+2025-11-18 10:48:30,117 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:48:33,612 - DEBUG - http://localhost:8000 "POST /api/login HTTP/1.1" 200 None
+2025-11-18 10:48:33,616 - INFO - Login realizado com sucesso para CPF: 123.456.789-01 - Usuário: Super User
+2025-11-18 10:48:37,551 - INFO - Configurações de impressora carregadas com sucesso
+2025-11-18 10:48:37,554 - INFO - Usuário Super User (CPF: 123.456.789-01) acessou etiquetas de endereçamento
+2025-11-18 10:48:37,660 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:48:40,258 - DEBUG - http://localhost:8000 "GET /api/warehouses/select HTTP/1.1" 200 None
+2025-11-18 10:48:43,218 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-11-18 10:48:46,233 - DEBUG - http://localhost:8000 "GET /api/warehouses/3 HTTP/1.1" 200 None
+2025-11-18 10:48:46,239 - INFO - Warehouse carregado: Cotia 1
+2025-11-18 10:48:50,404 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:48:50,404 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:48:50,405 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:48:50,415 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:48:50,416 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:48:50,417 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:48:50,417 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:48:50,423 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:48:50,424 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:48:50,424 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:48:50,424 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:48:50,431 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:49:17,457 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:49:17,457 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:49:17,457 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:49:17,466 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:49:17,468 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:49:17,468 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:49:17,469 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:49:17,475 - INFO - ZPL enviado para impressora 192.168.99.135:9100
+2025-11-18 10:49:17,476 - INFO - LabelPrinter inicializada: 135 - Zebra
+2025-11-18 10:49:17,476 - INFO - Enviando job de impressão: 1 etiqueta(s) via printer
+2025-11-18 10:49:17,476 - INFO - Impressora: 135 - Zebra
+2025-11-18 10:49:17,511 - INFO - ZPL enviado para impressora 192.168.99.135:9100

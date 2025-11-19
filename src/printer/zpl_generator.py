@@ -410,3 +410,270 @@ class ZplGenerator:
 
     def clear_commands(self):
         self.zpl_commands = []
+
+    def build_floor_addresses_zpl(self, warehouse_code: str, warehouse_name: str, 
+                                   building_name: str, floor_name: str, 
+                                   addresses: list) -> str:
+        """
+        Gera ZPL para MODELO 01: etiqueta com até 8 QR codes de endereços por andar
+        Layout: 2 colunas x 4 linhas = 8 endereços por etiqueta
+        Etiqueta: 150mm x 100mm (1181 x 787 dots @ 203 DPI)
+        
+        Args:
+            warehouse_code: Código do galpão (ex: COT001)
+            warehouse_name: Nome do galpão (ex: Cotia 1)
+            building_name: Nome do prédio (ex: Prédio A)
+            floor_name: Nome do andar (ex: Térreo)
+            addresses: Lista com até 8 dicts contendo 'full_address' e 'name'
+            
+        Returns:
+            Código ZPL para etiqueta de endereços por andar
+        """
+        # Dimensões da etiqueta 150mm x 100mm
+        dpi = 203
+        mm_to_dots = dpi / 25.4
+        width_dots = int(round(150 * mm_to_dots))  # ~1181 dots
+        height_dots = int(round(100 * mm_to_dots))  # ~787 dots
+        
+        zpl = "^XA\n"
+        zpl += "^CI28\n"  # UTF-8
+        zpl += f"^PW{width_dots}\n"
+        zpl += f"^LL{height_dots}\n"
+        zpl += "^LH0,0\n"
+        
+        # Título no topo: Galpão + Prédio + Andar
+        title = f"{warehouse_name} ({warehouse_code}) - {building_name} - {floor_name}"
+        title_x = 50
+        title_y = 40
+        title_font_h = 50
+        title_font_w = 40
+        
+        zpl += f"^FO{title_x},{title_y}\n"
+        zpl += f"^A0N,{title_font_h},{title_font_w}\n"
+        zpl += f"^FD{title}^FS\n"
+        
+        # Grid de QR codes: 2 colunas x 4 linhas
+        # Espaçamento ajustado para caber 8 QR codes
+        qr_start_x = 120
+        qr_start_y = 120
+        qr_spacing_x = 350  # Espaço entre colunas
+        qr_spacing_y = 230  # Espaço entre linhas (reduzido para caber 4 linhas)
+        qr_size = 7  # Magnification do QR code (reduzido de 8 para 7)
+        
+        # Posição do texto abaixo do QR
+        text_offset_y = 195  # Abaixo do QR code (ajustado)
+        text_font_h = 22  # Fonte menor
+        text_font_w = 22
+        
+        # Processar até 8 endereços
+        for idx, addr in enumerate(addresses[:8]):
+            # Calcular posição no grid (0-7 -> row 0-3, col 0-1)
+            row = idx // 2
+            col = idx % 2
+            
+            qr_x = qr_start_x + (col * qr_spacing_x)
+            qr_y = qr_start_y + (row * qr_spacing_y)
+            
+            # QR Code
+            full_address = addr.get('full_address', '')
+            zpl += f"^FO{qr_x},{qr_y}\n"
+            zpl += f"^BQN,2,{qr_size}\n"
+            zpl += f"^FDQA,{full_address}^FS\n"
+            
+            # Texto do endereço abaixo do QR
+            text_x = qr_x - 20  # Centralizar melhor
+            text_y = qr_y + text_offset_y
+            
+            zpl += f"^FO{text_x},{text_y}\n"
+            zpl += f"^A0N,{text_font_h},{text_font_w}\n"
+            zpl += f"^FD{full_address}^FS\n"
+        
+        zpl += "^XZ\n"
+        return zpl
+
+    def build_single_address_zpl(self, full_address: str, pallet_name: str, 
+                                  building_name: str, floor_name: str) -> str:
+        """
+        Gera ZPL para MODELO 02: etiqueta vertical individual com QR code grande
+        Layout: Vertical (rotacionado 90°) com QR code à esquerda e informações à direita
+        Etiqueta: 150mm x 100mm impressa verticalmente (rotação de 90°)
+        
+        Args:
+            full_address: Endereço completo (ex: COT001-A-01-01-01)
+            pallet_name: Nome do palete (ex: Palete 03)
+            building_name: Nome do prédio (ex: Prédio A)
+            floor_name: Nome do andar (ex: Térreo)
+            
+        Returns:
+            Código ZPL para etiqueta individual vertical
+        """
+        # Dimensões da etiqueta 150mm x 100mm
+        dpi = 203
+        mm_to_dots = dpi / 25.4
+        width_dots = int(round(150 * mm_to_dots))   # ~1181 dots
+        height_dots = int(round(100 * mm_to_dots))  # ~787 dots
+        
+        zpl = "^XA\n"
+        zpl += "^CI28\n"  # UTF-8
+        zpl += f"^PW{width_dots}\n"
+        zpl += f"^LL{height_dots}\n"
+        zpl += "^LH0,0\n"
+        
+        # Rotacionar 90° no sentido anti-horário
+        # ^POI = Print Orientation Inverted (180°), então usamos Normal + Field Rotation
+        zpl += "^FWB\n"  # Field orientation: B = rotação 90° anti-horário
+        
+        # QR Code grande (ajustado para rotação 90°)
+        # Quando rotacionado 90° anti-horário, X e Y são invertidos
+        # NOTA: Magnificação máxima suportada em ZPL = 10 (valores acima são ignorados)
+        qr_x = 300
+        qr_y = 100
+        qr_size = 10  # Tamanho máximo permitido pelo padrão ZPL
+        
+        zpl += f"^FO{qr_x},{qr_y}\n"
+        zpl += f"^BQN,2,{qr_size}\n"
+        zpl += f"^FDQA,{full_address}^FS\n"
+        
+        # Informações à esquerda do QR code (considerando rotação)
+        # info_x = 400
+        
+        # Endereço (grande) - Fonte rotacionada 90° para acompanhar ^FWB
+        addr_x = 500
+        addr_y = 400
+        addr_font_h = 80
+        addr_font_w = 60
+        
+        zpl += f"^FO{addr_x},{addr_y}\n"
+        zpl += f"^A0R,{addr_font_h},{addr_font_w}\n"  # R = rotação 90° sentido horário na fonte
+        zpl += f"^FD{full_address}^FS\n"
+        
+        # Nome do palete
+        name_x = 450
+        name_y = 400
+        name_font_h = 55
+        name_font_w = 45
+        
+        zpl += f"^FO{name_x},{name_y}\n"
+        zpl += f"^A0R,{name_font_h},{name_font_w}\n"
+        zpl += f"^FD{pallet_name}^FS\n"
+        
+        # Prédio
+        building_x = 350
+        building_y = 400
+        building_font_h = 40
+        building_font_w = 40
+        
+        zpl += f"^FO{building_x},{building_y}\n"
+        zpl += f"^A0R,{building_font_h},{building_font_w}\n"
+        zpl += f"^FD{building_name}^FS\n"
+        
+        # Andar
+        floor_x = 300
+        floor_y = 400
+        floor_font_h = 40
+        floor_font_w = 40
+        
+        zpl += f"^FO{floor_x},{floor_y}\n"
+        zpl += f"^A0R,{floor_font_h},{floor_font_w}\n"
+        zpl += f"^FD{floor_name}^FS\n"
+        
+        zpl += "^XZ\n"
+        return zpl
+
+    def build_block_addresses_zpl(self, warehouse_code: str, warehouse_name: str,
+                                   building_name: str, addresses_by_position: list) -> str:
+        """
+        Gera ZPL para MODELO 03: etiqueta com até 8 QR codes organizados por posição vertical
+        Layout: 2 colunas x 4 linhas = 8 posições (do andar mais alto para o mais baixo)
+        Etiqueta: 150mm x 100mm (1181 x 787 dots @ 203 DPI)
+        
+        Args:
+            warehouse_code: Código do galpão (ex: COT001)
+            warehouse_name: Nome do galpão (ex: Cotia 1)
+            building_name: Nome do prédio (ex: Prédio A)
+            addresses_by_position: Lista com até 8 dicts contendo full_address, floor_name
+                                   Ordenados do andar mais alto para o mais baixo
+            
+        Returns:
+            Código ZPL para etiqueta de endereços por bloco vertical
+        """
+        # Dimensões da etiqueta 150mm x 100mm
+        dpi = 203
+        mm_to_dots = dpi / 25.4
+        width_dots = int(round(150 * mm_to_dots))  # ~1181 dots
+        height_dots = int(round(100 * mm_to_dots))  # ~787 dots
+        
+        zpl = "^XA\n"
+        zpl += "^CI28\n"  # UTF-8
+        zpl += f"^PW{width_dots}\n"
+        zpl += f"^LL{height_dots}\n"
+        zpl += "^LH0,0\n"
+        
+        # Título no topo: Galpão + Prédio
+        title = f"{warehouse_name} ({warehouse_code}) - {building_name}"
+        title_x = 50
+        title_y = 40
+        title_font_h = 50
+        title_font_w = 40
+        
+        zpl += f"^FO{title_x},{title_y}\n"
+        zpl += f"^A0N,{title_font_h},{title_font_w}\n"
+        zpl += f"^FD{title}^FS\n"
+        
+        # Grid de QR codes: 2 colunas x 4 linhas
+        qr_start_x = 120
+        qr_start_y = 120
+        qr_spacing_x = 310  # Espaço entre colunas
+        qr_spacing_y = 235  # Espaço entre linhas (reduzido para caber 4 linhas)
+        qr_size = 7  # Magnification do QR code (reduzido de 8 para 7)
+        
+        # Posição do texto abaixo do QR
+        text_offset_y = 195  # Ajustado
+        floor_offset_y = 218  # Ajustado
+        text_font_h = 22  # Fonte menor
+        text_font_w = 22
+        floor_font_h = 25  # Fonte menor
+        floor_font_w = 25
+        
+        # Mapear índice para posição no grid (direita para esquerda, cima para baixo)
+        position_map = [
+            (1, 0),  # idx 0: direita, linha 0 (andar mais alto)
+            (0, 0),  # idx 1: esquerda, linha 0
+            (1, 1),  # idx 2: direita, linha 1
+            (0, 1),  # idx 3: esquerda, linha 1
+            (1, 2),  # idx 4: direita, linha 2
+            (0, 2),  # idx 5: esquerda, linha 2
+            (1, 3),  # idx 6: direita, linha 3
+            (0, 3),  # idx 7: esquerda, linha 3 (andar mais baixo)
+        ]
+        
+        # Processar até 8 endereços
+        for idx, addr_data in enumerate(addresses_by_position[:8]):
+            col, row = position_map[idx]
+            
+            qr_x = qr_start_x + (col * qr_spacing_x)
+            qr_y = qr_start_y + (row * qr_spacing_y)
+            
+            full_address = addr_data.get('full_address', '')
+            floor_name = addr_data.get('floor_name', '')
+            
+            # QR Code
+            zpl += f"^FO{qr_x},{qr_y}\n"
+            zpl += f"^BQN,2,{qr_size}\n"
+            zpl += f"^FDQA,{full_address}^FS\n"
+            
+            # Texto do endereço
+            text_x = qr_x - 20
+            text_y = qr_y + text_offset_y
+            zpl += f"^FO{text_x},{text_y}\n"
+            zpl += f"^A0N,{text_font_h},{text_font_w}\n"
+            zpl += f"^FD{full_address}^FS\n"
+            
+            # Nome do andar
+            floor_y = qr_y + floor_offset_y
+            zpl += f"^FO{text_x},{floor_y}\n"
+            zpl += f"^A0N,{floor_font_h},{floor_font_w}\n"
+            zpl += f"^FD{floor_name}^FS\n"
+        
+        zpl += "^XZ\n"
+        return zpl

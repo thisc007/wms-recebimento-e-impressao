@@ -44,6 +44,8 @@ class ConsolidatorWindow:
         self.configured_printers = {}
         self.warehouses = []
         self.warehouse_dict = {}
+        self.customers = []
+        self.customer_dict = {}
         self.cargo_codes_cache = []  # Cache dos códigos digitados
 
         # Criar Toplevel passando o parent para evitar janela órfã
@@ -52,8 +54,9 @@ class ConsolidatorWindow:
         self.root.geometry("750x700")
         self.root.resizable(False, False)
 
-        # Carregar galpões antes de criar widgets para popular o select
+        # Carregar galpões e clientes antes de criar widgets para popular os selects
         self.load_warehouses()
+        self.load_customers()
         self.create_widgets()
         self.load_printers()
 
@@ -90,6 +93,19 @@ class ConsolidatorWindow:
             self.warehouse_combo.set('-- Nenhum galpão disponível --')
             self.warehouse_combo.config(state='disabled')
         self.warehouse_combo.pack(fill=tk.X, pady=(2, 10))
+
+        # Cliente
+        ttk.Label(setup_frame, text="Cliente:*", font=('Arial', 9)).pack(anchor='w')
+        self.customer_combo = ttk.Combobox(setup_frame, state='readonly', 
+                                          font=('Arial', 10), width=50)
+        if self.customers:
+            self.customer_combo['values'] = list(self.customer_dict.keys())
+            self.customer_combo.set('-- Selecione um cliente --')
+        else:
+            self.customer_combo['values'] = ['-- Nenhum cliente disponível --']
+            self.customer_combo.set('-- Nenhum cliente disponível --')
+            self.customer_combo.config(state='disabled')
+        self.customer_combo.pack(fill=tk.X, pady=(2, 10))
 
         # Impressora
         ttk.Label(setup_frame, text="Impressora:*", font=('Arial', 9)).pack(anchor='w')
@@ -188,6 +204,31 @@ class ConsolidatorWindow:
         except Exception as e:
             log_error(f"Erro ao carregar galpões (consolidator): {e}")
 
+    def load_customers(self):
+        """Carrega lista de clientes para o select box"""
+        try:
+            headers = {
+                'Authorization': f'Bearer {self.token}',
+                'Accept': 'application/json'
+            }
+            resp = self.api_client.get('/customers', headers=headers)
+            if resp.status_code == 200:
+                result = resp.json()
+                # A API pode retornar direto a lista ou dentro de 'data'
+                customers_data = result if isinstance(result, list) else result.get('data', [])
+                
+                if customers_data:
+                    self.customers = customers_data
+                    self.customer_dict = {}
+                    for c in self.customers:
+                        # Verificar se é dict ou se tem estrutura diferente
+                        if isinstance(c, dict):
+                            name = c.get('name') or c.get('company_name') or f"ID:{c.get('id')}"
+                            self.customer_dict[name] = c.get('id')
+                    log_info(f"Carregados {len(self.customers)} clientes para consolidação")
+        except Exception as e:
+            log_error(f"Erro ao carregar clientes (consolidator): {e}")
+
     def show_result(self, text: str, color: str = 'black'):
         """Exibe resultado na caixa de texto"""
         self.result_text.config(state='normal')
@@ -223,6 +264,16 @@ class ConsolidatorWindow:
                 messagebox.showerror("Erro", "Galpão inválido")
                 return
 
+            # Validar cliente
+            customer_name = self.customer_combo.get().strip()
+            if not customer_name or customer_name.startswith('--'):
+                messagebox.showwarning("Atenção", "Selecione um cliente")
+                return
+            customer_id = self.customer_dict.get(customer_name)
+            if not customer_id:
+                messagebox.showerror("Erro", "Cliente inválido")
+                return
+
             # Validar impressora
             printer_name = self.printer_combo.get().strip()
             if not printer_name:
@@ -247,7 +298,7 @@ class ConsolidatorWindow:
                     "Digite ou cole os códigos das cargas no campo de texto\n(um por linha ou separados por Enter)")
                 return
 
-            self.show_result(f"⏳ Processando {len(cargo_codes)} carga(s)...\n\nGalpão: {wh_name}\nImpressora: {printer_name}", "blue")
+            self.show_result(f"⏳ Processando {len(cargo_codes)} carga(s)...\n\nGalpão: {wh_name}\nCliente: {customer_name}\nImpressora: {printer_name}", "blue")
             self.root.update()
 
             # Buscar cargo_ids via API (usando códigos)
@@ -395,10 +446,11 @@ class ConsolidatorWindow:
             # Criar consolidador via API
             payload = {
                 'warehouse_id': int(warehouse_id),
+                'customer_id': int(customer_id),
                 'cargo_ids': cargo_ids
             }
 
-            log_info(f"Criando consolidador: {len(cargo_ids)} cargas no galpão {warehouse_id}")
+            log_info(f"Criando consolidador: {len(cargo_ids)} cargas no galpão {warehouse_id} para cliente {customer_id}")
             
             resp = self.api_client.post('/consolidators', data=payload, headers=headers)
 

@@ -348,6 +348,13 @@ class MainWindow:
                                           style='Compact.TButton')
         consolidation_button.pack(pady=8, fill=tk.X)
         
+        # Botão Etiquetas de Endereçamento (novo)
+        address_labels_button = ttk.Button(buttons_frame,
+                                           text="📍 Etiquetas de Endereçamento",
+                                           command=self.open_address_labels,
+                                           style='Compact.TButton')
+        address_labels_button.pack(pady=8, fill=tk.X)
+        
         # Separador
         separator = ttk.Separator(buttons_frame, orient='horizontal')
         separator.pack(fill=tk.X, pady=12)  # Reduzido de 20 para 12
@@ -729,6 +736,25 @@ class MainWindow:
             self.root.lift()
             self.root.focus_force()
             print("DEBUG: Janela principal reabilitada (consolidators).")
+    
+    def open_address_labels(self):
+        """Abre a janela de Etiquetas de Endereçamento"""
+        try:
+            from ui.address_labels_window import AddressLabelsWindow
+            from utils.user_session import UserSession
+            
+            log_info(f"Usuário {self.user_data.get('name', 'N/A')} (CPF: {format_cpf(self.cpf)}) acessou etiquetas de endereçamento")
+            
+            # Criar sessão de usuário com a assinatura correta
+            user_session = UserSession(self.token, self.user_data)
+            
+            # Abrir janela de etiquetas de endereçamento
+            AddressLabelsWindow(self.root, self.api_client, user_session)
+            
+        except Exception as e:
+            log_error(f"Erro ao abrir janela de endereçamento: {str(e)}")
+            messagebox.showerror("Erro", f"Erro ao abrir janela de endereçamento:\n{str(e)}")
+
         
     def open_label_printer_settings(self):
         """Abre a janela de configuração da etiquetadora"""
